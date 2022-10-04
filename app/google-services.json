@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "434495964331",
+    "project_id": "repuestosconejo-1e525",
+    "storage_bucket": "repuestosconejo-1e525.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434495964331:android:19defa3a09cf4c11c823ee",
+        "android_client_info": {
+          "package_name": "com.example.repuestosconejo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434495964331-f64fjqnqg4o65isfjjrun5pcv9752rjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY0_RPUIjlDwEG9wliLZqbzjVdBA5Z9UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434495964331-f64fjqnqg4o65isfjjrun5pcv9752rjt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
