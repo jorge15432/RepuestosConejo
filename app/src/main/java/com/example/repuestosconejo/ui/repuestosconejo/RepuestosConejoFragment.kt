@@ -1,4 +1,4 @@
-package com.example.repuestosconejo.ui.home
+package com.example.repuestosconejo.ui.repuestosconejo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.repuestosconejo.databinding.FragmentHomeBinding
+import com.example.repuestosconejo.databinding.FragmentRepuestosConejoBinding
+import com.example.repuestosconejo.viewmodel.RepuestosConejoViewModel
 
-class HomeFragment : Fragment() {
+class RepuestosConejoFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentRepuestosConejoBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,16 +23,12 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val repuestosConejoViewModel =
+            ViewModelProvider(this).get(RepuestosConejoViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentRepuestosConejoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
