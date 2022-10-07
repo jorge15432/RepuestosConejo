@@ -19,9 +19,5 @@ data class RepuestosConejo(
     @ColumnInfo(name="modelo")
     val modelo: String,
     @ColumnInfo(name="codigo")
-    val codigo: String?,
-    @ColumnInfo(name="color")
-    val color: String?,
-    @ColumnInfo(name="imagen")
-    val imagen: String?
+    val codigo: String?
 ) : Parcelable

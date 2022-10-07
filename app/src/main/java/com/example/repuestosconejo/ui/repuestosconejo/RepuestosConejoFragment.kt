@@ -7,29 +7,29 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.repuestosconejo.R
 import com.example.repuestosconejo.databinding.FragmentRepuestosConejoBinding
 import com.example.repuestosconejo.viewmodel.RepuestosConejoViewModel
 
 class RepuestosConejoFragment : Fragment() {
-
     private var _binding: FragmentRepuestosConejoBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var repuestosConejoViewModel:RepuestosConejoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val repuestosConejoViewModel =
-            ViewModelProvider(this).get(RepuestosConejoViewModel::class.java)
-
+         repuestosConejoViewModel = ViewModelProvider(this).get(RepuestosConejoViewModel::class.java)
         _binding = FragmentRepuestosConejoBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        return root
+        binding.addrepuestosconejoFabBut.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_repuestos_conejo_to_addRepuestosconejoFragment)
+        }
+
+        return binding.root
     }
 
     override fun onDestroyView() {

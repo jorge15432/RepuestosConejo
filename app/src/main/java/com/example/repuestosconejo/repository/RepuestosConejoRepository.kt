@@ -5,13 +5,16 @@ import com.example.repuestosconejo.data.RepuestosConejoDao
 import com.example.repuestosconejo.model.RepuestosConejo
 
 class RepuestosConejoRepository(private val repuestosconejoDao: RepuestosConejoDao) {
-    suspend fun addrepuestosconejo(repuestosconejo: RepuestosConejo) {
+    suspend fun saveRepuestosConejo(repuestosconejo: RepuestosConejo) {
+    if (repuestosconejo.id==0){
         repuestosconejoDao.addRepuestosConejo(repuestosconejo)
-    }
-    suspend fun updaterepuestosconejo(repuestosconejo: RepuestosConejo) {
+
+    }else {
         repuestosconejoDao.updateRepuestosConejo(repuestosconejo)
+
     }
-    suspend fun deleterepuestosconejo(repuestosconejo: RepuestosConejo) {
+    }
+    suspend fun deleteRepuestosconejo(repuestosconejo: RepuestosConejo) {
         repuestosconejoDao.deleteRepuestosConejo(repuestosconejo)
     }
     val getRepuestosConejo : LiveData<List<RepuestosConejo>> = repuestosconejoDao.getRepuestosConejo()

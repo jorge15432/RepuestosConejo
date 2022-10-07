@@ -16,14 +16,12 @@ class RepuestosConejoViewModel(application: Application) : AndroidViewModel(appl
         repository = RepuestosConejoRepository(repuestosconejoDao)
         getRepuestosConejo = repository.getRepuestosConejo
     }
-    suspend fun addRepuestosConejo(repuestosconejo: RepuestosConejo) {
-        viewModelScope.launch { repository.addrepuestosconejo(repuestosconejo) }
+     fun saveRepuestosConejo(repuestosconejo: RepuestosConejo){
+        viewModelScope.launch { repository.saveRepuestosConejo(repuestosconejo) }
     }
-    suspend fun updateRepuestosConejo(repuestosconejo: RepuestosConejo) {
-        viewModelScope.launch { repository.updaterepuestosconejo(repuestosconejo) }
-    }
-    suspend fun deleteRepuestosConejo(repuestosconejo: RepuestosConejo) {
-        viewModelScope.launch { repository.deleterepuestosconejo(repuestosconejo) }
+
+     fun deleteRepuestosConejo(repuestosconejo: RepuestosConejo) {
+        viewModelScope.launch { repository.deleteRepuestosconejo(repuestosconejo) }
     }
 }
 
