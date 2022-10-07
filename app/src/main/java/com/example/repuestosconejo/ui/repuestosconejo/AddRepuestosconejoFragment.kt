@@ -27,31 +27,35 @@ class AddRepuestosconejoFragment : Fragment() {
         repuestosConejoViewModel = ViewModelProvider(this).get(RepuestosConejoViewModel::class.java)
         _binding = FragmentAddRepuestosconejoBinding.inflate(inflater, container, false)
 
-    binding.btAddRepuesto.setOnClickListener{ addRepuesto()
+        binding.btAddRepuesto.setOnClickListener {
+            addRepuesto()
 
-    }
+        }
 
         return binding.root
     }
 
     private fun addRepuesto() {
-        val nombre=binding.etNombre.text.toString()
-        val correo=binding.etCorreoRepuesto.text.toString()
-        val telefono=binding.etTelefono.text.toString()
-        val web=binding.etWeb.text.toString()
-        if(nombre.isNotEmpty()){
+        val nombre = binding.etNombre.text.toString()
+        val correo = binding.etCorreoRepuesto.text.toString()
+        val telefono = binding.etTelefono.text.toString()
+        val web = binding.etWeb.text.toString()
+        if (nombre.isNotEmpty()) {
 
-            val repuesto = RepuestosConejo(0,nombre,correo,telefono,web)
-              //RepuestosConejoViewModel.saveRepuestosConejo(repuesto)
-            Toast.makeText(requireContext(),getString(R.string.msg_repuesto_added),
-            Toast.LENGTH_SHORT).show()
+            val repuesto = RepuestosConejo(0, nombre, correo, telefono, web)
+            //RepuestosConejoViewModel.saveRepuestosConejo(repuesto)
+            Toast.makeText(
+                requireContext(), getString(R.string.msg_repuesto_added),
+                Toast.LENGTH_SHORT
+            ).show()
             findNavController().navigate(R.id.action_addRepuestosconejoFragment_to_nav_repuestos_conejo)
 
-        }else{
-            Toast.makeText(requireContext(),getString(R.string.msg_data),
-                Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(
+                requireContext(), getString(R.string.msg_data),
+                Toast.LENGTH_LONG
+            ).show()
         }
-
     }
 
     override fun onDestroyView() {
