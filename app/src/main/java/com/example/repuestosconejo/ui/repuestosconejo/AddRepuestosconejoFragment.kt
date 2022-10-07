@@ -50,8 +50,6 @@ class AddRepuestosconejoFragment : Fragment() {
         }else{
             Toast.makeText(requireContext(),getString(R.string.msg_data),
                 Toast.LENGTH_LONG).show()
-
-
         }
 
     }

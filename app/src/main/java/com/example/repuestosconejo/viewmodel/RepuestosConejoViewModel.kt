@@ -23,5 +23,8 @@ class RepuestosConejoViewModel(application: Application) : AndroidViewModel(appl
      fun deleteRepuestosConejo(repuestosconejo: RepuestosConejo) {
         viewModelScope.launch { repository.deleteRepuestosconejo(repuestosconejo) }
     }
+
 }
+
+
 
