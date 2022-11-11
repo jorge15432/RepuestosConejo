@@ -17,8 +17,10 @@
 
         <TextView
             android:id="@+id/et_correo"
-            android:layout_width="268dp"
-            android:layout_height="38dp"
+            android:layout_width="271dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:background="#BDC2CA"
             android:fontFamily="sans-serif-black"
             android:text="@string/tv_correo"
@@ -26,94 +28,132 @@
             android:textSize="28sp"
             android:textStyle="bold|italic"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="174dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/img_correo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_correo"
+            app:layout_constraintVertical_bias="0.384" />
 
         <TextView
             android:id="@+id/et_contra"
             android:layout_width="267dp"
             android:layout_height="39dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
             android:background="#BCC1C9"
             android:fontFamily="sans-serif-black"
             android:text="@string/tv_contra"
             android:textAlignment="center"
             android:textSize="28sp"
             android:textStyle="bold|italic"
-            tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="234dp" />
+            app:layout_constraintBottom_toTopOf="@+id/tv_registrarse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_correo" />
 
         <LinearLayout
-            android:layout_width="369dp"
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="21dp"
-            tools:layout_editor_absoluteY="295dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ingresar">
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="369dp"
             android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginBottom="221dp"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="434dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_correo">
 
         </LinearLayout>
 
         <ImageView
             android:id="@+id/img_logo"
             android:layout_width="289dp"
-            android:layout_height="60dp"
-            app:srcCompat="@drawable/logo_repuestos_conejo"
-            tools:layout_editor_absoluteX="71dp"
-            tools:layout_editor_absoluteY="39dp" />
+            android:layout_height="0dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="66dp"
+            app:layout_constraintBottom_toTopOf="@+id/img_correo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_repuestos_conejo" />
 
         <ImageView
             android:id="@+id/img_correo"
-            android:layout_width="40dp"
-            android:layout_height="55dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="7dp"
             android:adjustViewBounds="false"
-            app:srcCompat="@drawable/_0442"
-            tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="165dp" />
+            app:layout_constraintBottom_toTopOf="@+id/img_contraseña"
+            app:layout_constraintEnd_toEndOf="@+id/img_contraseña"
+            app:layout_constraintStart_toStartOf="@+id/img_contraseña"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo"
+            app:srcCompat="@drawable/_0442" />
 
         <ImageView
             android:id="@+id/img_contraseña"
             android:layout_width="40dp"
-            android:layout_height="55dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="13dp"
             android:adjustViewBounds="false"
-            app:srcCompat="@drawable/png_transparent_computer_icons_skype_icon_design_change_password_logo_internet_share_icon_removebg_preview"
-            tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="227dp" />
+            app:layout_constraintBottom_toTopOf="@+id/tv_registrarse"
+            app:layout_constraintStart_toStartOf="@+id/et_contra"
+            app:layout_constraintTop_toBottomOf="@+id/img_correo"
+            app:srcCompat="@drawable/png_transparent_computer_icons_skype_icon_design_change_password_logo_internet_share_icon_removebg_preview" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:text="Si no posees una cuenta puedes "
-            tools:layout_editor_absoluteX="71dp"
-            tools:layout_editor_absoluteY="295dp" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_registrarse"
+            app:layout_constraintEnd_toStartOf="@+id/tv_registrarse"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_registrarse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="102dp"
             android:text="REGISTARTE"
             android:textColor="#6080E1"
-            tools:layout_editor_absoluteX="276dp"
-            tools:layout_editor_absoluteY="295dp" />
+            app:layout_constraintBottom_toTopOf="@+id/btn_ingresar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/img_contraseña" />
 
         <Button
             android:id="@+id/btn_ingresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="187dp"
             android:background="#000000"
             android:backgroundTint="#000000"
             android:text="INGRESAR"
             android:textSize="24sp"
             app:iconTint="#000000"
-            tools:layout_editor_absoluteX="123dp"
-            tools:layout_editor_absoluteY="332dp" />
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_registrarse" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
