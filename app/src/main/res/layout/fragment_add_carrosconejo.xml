@@ -14,10 +14,10 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btn_guardar_vehiculo"
+            android:id="@+id/btn_guardar_repuesto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundColor="#000000"
+            android:background="#000000"
             android:backgroundTint="#000000"
             android:text="GUARDAR VEHICULO"
             android:textSize="24sp"
@@ -26,7 +26,7 @@
             tools:layout_editor_absoluteY="606dp" />
 
         <TextView
-            android:id="@+id/tv_color"
+            android:id="@+id/etCodigo"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -39,7 +39,7 @@
             tools:layout_editor_absoluteY="261dp" />
 
         <TextView
-            android:id="@+id/tv_placa"
+            android:id="@+id/etPrecio"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -52,7 +52,7 @@
             tools:layout_editor_absoluteY="545dp" />
 
         <TextView
-            android:id="@+id/tv_estado"
+            android:id="@+id/etCantidad"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -146,7 +146,7 @@
             tools:layout_editor_absoluteY="119dp" />
 
         <TextView
-            android:id="@+id/tv_año_carrro"
+            android:id="@+id/etAñoRep"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -159,7 +159,7 @@
             tools:layout_editor_absoluteY="165dp" />
 
         <TextView
-            android:id="@+id/tv_modelo"
+            android:id="@+id/etMarca"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -172,7 +172,7 @@
             tools:layout_editor_absoluteY="165dp" />
 
         <ImageView
-            android:id="@+id/img_imagen_carro"
+            android:id="@+id/imgCarro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="0dp"

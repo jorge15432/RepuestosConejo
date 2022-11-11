@@ -27,7 +27,7 @@ class AddRepuestosconejoFragment : Fragment() {
         repuestosConejoViewModel = ViewModelProvider(this).get(RepuestosConejoViewModel::class.java)
         _binding = FragmentAddRepuestosconejoBinding.inflate(inflater, container, false)
 
-        binding.btAddRepuesto.setOnClickListener {
+        binding.btnGuardarRepuesto.setOnClickListener {
             addRepuesto()
 
         }
@@ -36,13 +36,15 @@ class AddRepuestosconejoFragment : Fragment() {
     }
 
     private fun addRepuesto() {
-        val nombre = binding.etNombre.text.toString()
-        val correo = binding.etCorreoRepuesto.text.toString()
-        val telefono = binding.etTelefono.text.toString()
-        val web = binding.etWeb.text.toString()
-        if (nombre.isNotEmpty()) {
+        val marca = binding.etMarca.text.toString()
+        val año = binding.etAORep.text.toString()
+        val codigo = binding.etCodigo.text.toString()
+        //val imagen = binding.imgCarro..toString() Almacenar imagen
+        val precio = binding.etPrecio.text.toString()
+        val cantidad = binding.etCantidad.text.toString()
+        if (codigo.isNotEmpty()) {
 
-            val repuesto = RepuestosConejo(0, nombre, correo, telefono, web)
+            val repuesto = RepuestosConejo(0, marca, año, codigo, precio, cantidad)
             //RepuestosConejoViewModel.saveRepuestosConejo(repuesto)
             Toast.makeText(
                 requireContext(), getString(R.string.msg_repuesto_added),

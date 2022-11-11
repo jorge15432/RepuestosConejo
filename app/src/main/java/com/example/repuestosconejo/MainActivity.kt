@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         auth=Firebase.auth
 
 
-        binding.btRegistro.setOnClickListener{Registro()}
-        binding.btInicioDeSesion.setOnClickListener{Login()}
+        binding.tvRegistrarse.setOnClickListener{Registro()}
+        binding.btnIngresar.setOnClickListener{Login()}
     }
 
     private fun Login() {
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun Registro() {
-      val email=binding.etEmail.text.toString()
-        val contra=binding.etPassword.text.toString()
+      val email=binding.etCorreo.text.toString()
+        val contra=binding.etContra.text.toString()
 
         auth.createUserWithEmailAndPassword(email,contra).addOnCompleteListener(this){
             task -> if(task.isSuccessful){val user=auth.currentUser

@@ -16,7 +16,7 @@
         android:background="#4C6793">
 
         <TextView
-            android:id="@+id/tv_correo"
+            android:id="@+id/et_correo"
             android:layout_width="268dp"
             android:layout_height="38dp"
             android:background="#BDC2CA"
@@ -30,7 +30,7 @@
             tools:layout_editor_absoluteY="174dp" />
 
         <TextView
-            android:id="@+id/tv_contra"
+            android:id="@+id/et_contra"
             android:layout_width="267dp"
             android:layout_height="39dp"
             android:background="#BCC1C9"
@@ -100,10 +100,10 @@
             tools:layout_editor_absoluteY="291dp" />
 
         <Button
-            android:id="@+id/btn_registar"
+            android:id="@+id/btn_ingresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundColor="#000000"
+            android:background="#000000"
             android:backgroundTint="#000000"
             android:text="REGISTAR"
             android:textSize="24sp"
