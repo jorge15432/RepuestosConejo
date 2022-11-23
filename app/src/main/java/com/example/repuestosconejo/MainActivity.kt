@@ -3,6 +3,7 @@ package com.example.repuestosconejo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.repuestosconejo.databinding.ActivityMainBinding
 import com.google.firebase.FirebaseApp
@@ -32,7 +33,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun Login() {
 
+        val email=binding.etCorreo.text.toString()
+        val contra=binding.etContra.text.toString()
+
+        Log.d("Autenticandose","Haciendo llamado de autenticacion")
+        //Utilizo el objeto auth para hacer el registro...
+        auth.signInWithEmailAndPassword(email,contra)
+            .addOnCompleteListener(this){task->
+                if(task.isSuccessful){//Si se logro... se creo el usuario
+                    Log.d("Autenticando","se autentico")
+                    val user=auth.currentUser
+                    refresca(user)
+                }else{//Si no se logro, hubo un error...
+                    Log.e("Autenticando","Error de Autenticacion")
+                    Toast.makeText(baseContext,"Fallo",Toast.LENGTH_LONG).show()
+                    refresca(null)
+
+                }
+            }
+        Log.d("Autenticando","Sale del proceso...")
     }
+
 
     private fun Registro() {
       val email=binding.etCorreo.text.toString()

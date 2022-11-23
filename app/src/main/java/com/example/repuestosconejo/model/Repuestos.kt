@@ -7,21 +7,18 @@ import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName="repuestosconejo")
-data class RepuestosConejo(
+@Entity(tableName="repuestos")
+data class Repuestos(
 
     @PrimaryKey(autoGenerate = false)
     val id: Int,
-    @ColumnInfo(name="marca")
-    val marca: String?,
-    @ColumnInfo(name="año")
-    val año: String,
-    @ColumnInfo(name="codigo")
-    val codigo: String,
-    @ColumnInfo(name="precio")
-    val precio: String?,
+    @ColumnInfo(name="nombre")
+    val nombre: String?,
+    @ColumnInfo(name="descripcion")
+    val descripcion: String,
     @ColumnInfo(name="cantidad")
-    val cantidad: String?
+    val cantidad: String,
+
     ) : Parcelable
 
 //falta agregar iamgen

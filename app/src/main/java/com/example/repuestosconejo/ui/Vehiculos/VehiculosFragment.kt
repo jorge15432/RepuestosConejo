@@ -1,29 +1,28 @@
-package com.example.repuestosconejo.ui.repuestosconejo
+package com.example.repuestosconejo.ui.Vehiculos
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.repuestosconejo.R
-import com.example.repuestosconejo.databinding.FragmentRepuestosConejoBinding
-import com.example.repuestosconejo.viewmodel.RepuestosConejoViewModel
+import com.example.repuestosconejo.databinding.FragmentVehiculosBinding
+import com.example.repuestosconejo.viewmodel.VehiculosViewModel
 
-class RepuestosConejoFragment : Fragment() {
-    private var _binding: FragmentRepuestosConejoBinding? = null
+class VehiculosFragment : Fragment() {
+    private var _binding: FragmentVehiculosBinding? = null
     private val binding get() = _binding!!
-    private lateinit var repuestosConejoViewModel:RepuestosConejoViewModel
+    private lateinit var vehiculosViewModel:VehiculosViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-         repuestosConejoViewModel = ViewModelProvider(this).get(RepuestosConejoViewModel::class.java)
-        _binding = FragmentRepuestosConejoBinding.inflate(inflater, container, false)
+         vehiculosViewModel = ViewModelProvider(this).get(VehiculosViewModel::class.java)
+        _binding = FragmentVehiculosBinding.inflate(inflater, container, false)
 
         binding.addrepuestosconejoFabBut.setOnClickListener{
             findNavController().navigate(R.id.action_nav_repuestos_conejo_to_addRepuestosconejoFragment)

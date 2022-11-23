@@ -1,4 +1,4 @@
-package com.example.repuestosconejo.ui.repuestosconejo
+package com.example.repuestosconejo.ui.Vehiculos
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,21 +10,21 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.repuestosconejo.R
 import com.example.repuestosconejo.databinding.FragmentAddRepuestosconejoBinding
-import com.example.repuestosconejo.model.RepuestosConejo
-import com.example.repuestosconejo.viewmodel.RepuestosConejoViewModel
+import com.example.repuestosconejo.model.Vehiculos
+import com.example.repuestosconejo.viewmodel.VehiculosViewModel
 
 
-class AddRepuestosconejoFragment : Fragment() {
+class AddVehiculosFragment : Fragment() {
     private var _binding: FragmentAddRepuestosconejoBinding? = null
     private val binding get() = _binding!!
-    private lateinit var repuestosConejoViewModel: RepuestosConejoViewModel
+    private lateinit var vehiculosViewModel: VehiculosViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        repuestosConejoViewModel = ViewModelProvider(this).get(RepuestosConejoViewModel::class.java)
+        vehiculosViewModel = ViewModelProvider(this).get(VehiculosViewModel::class.java)
         _binding = FragmentAddRepuestosconejoBinding.inflate(inflater, container, false)
 
         binding.btnGuardarRepuesto.setOnClickListener {
@@ -44,8 +44,8 @@ class AddRepuestosconejoFragment : Fragment() {
         val cantidad = binding.etCantidad.text.toString()
         if (codigo.isNotEmpty()) {
 
-            val repuesto = RepuestosConejo(0, marca, año, codigo, precio, cantidad)
-            //RepuestosConejoViewModel.saveRepuestosConejo(repuesto)
+            val repuesto = Vehiculos(0, marca, año, codigo, precio, cantidad)
+            //VehiculosViewModel.saveRepuestosConejo(repuesto)
             Toast.makeText(
                 requireContext(), getString(R.string.msg_repuesto_added),
                 Toast.LENGTH_SHORT

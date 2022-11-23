@@ -7,28 +7,28 @@
 
     <fragment
         android:id="@+id/nav_repuestos_conejo"
-        android:name="com.example.repuestosconejo.ui.repuestosconejo.RepuestosConejoFragment"
+        android:name="com.example.repuestosconejo.ui.Vehiculos.VehiculosFragment"
         android:label="@string/menu_repuestos_conejo"
-        tools:layout="@layout/fragment_repuestos_conejo" >
+        tools:layout="@layout/fragment_vehiculos" >
         <action
             android:id="@+id/action_nav_repuestos_conejo_to_addRepuestosconejoFragment"
             app:destination="@id/addRepuestosconejoFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.repuestosconejo.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_pedidos"
+        android:name="com.example.repuestosconejo.ui.Repuestos.RepuestosFragment"
+        android:label="@string/menu_pedidos"
+        tools:layout="@layout/fragment_pedidos" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.repuestosconejo.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_repuestos"
+        android:name="com.example.repuestosconejo.ui.Pedidos.PedidosFragment"
+        android:label="@string/menu_repuestos"
+        tools:layout="@layout/fragment_repuestos" />
     <fragment
         android:id="@+id/addRepuestosconejoFragment"
-        android:name="com.example.repuestosconejo.ui.repuestosconejo.AddRepuestosconejoFragment"
+        android:name="com.example.repuestosconejo.ui.Vehiculos.AddVehiculosFragment"
         android:label="@string/bt_add_lugar"
         tools:layout="@layout/fragment_add_repuestosconejo" >
         <action
