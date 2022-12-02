@@ -24,7 +24,9 @@ class RepuestosFragment : Fragment() {
         repuestosViewModel = ViewModelProvider(this).get(RepuestosViewModel::class.java)
         _binding = FragmentRepuestosBinding.inflate(inflater, container, false)
 
-
+        binding.addrepuestos.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_repuestos_to_addRepuestosconejoFragment)
+        }
 
         return binding.root
     }

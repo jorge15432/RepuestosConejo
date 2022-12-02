@@ -7,23 +7,23 @@
     android:background="#5E769C"
     android:orientation="vertical"
     android:padding="10sp"
-    tools:context=".ui.Vehiculos.addVehiculosFragment">
+    tools:context=".ui.Repuestos.AddRepuestosFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btn_guardar_vehiculo"
+            android:id="@+id/btn_guardar_repuesto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#000000"
-            android:backgroundTint="#000000"
+            android:background="#121111"
+            android:backgroundTint="#F8F3F3"
             android:text="GUARDAR REPUESTO"
             android:textSize="24sp"
             app:iconTint="#000000"
-            tools:layout_editor_absoluteX="44dp"
-            tools:layout_editor_absoluteY="593dp" />
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="607dp" />
 
         <TextView
             android:id="@+id/etPrecio"
@@ -113,7 +113,7 @@
             tools:layout_editor_absoluteY="199dp" />
 
         <TextView
-            android:id="@+id/etAñoRep"
+            android:id="@+id/etDescripcion"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -126,7 +126,7 @@
             tools:layout_editor_absoluteY="290dp" />
 
         <TextView
-            android:id="@+id/etMarca"
+            android:id="@+id/etNombre"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"

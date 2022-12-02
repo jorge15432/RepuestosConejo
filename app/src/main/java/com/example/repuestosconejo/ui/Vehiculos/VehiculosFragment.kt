@@ -25,7 +25,7 @@ class VehiculosFragment : Fragment() {
         _binding = FragmentVehiculosBinding.inflate(inflater, container, false)
 
         binding.addrepuestosconejoFabBut.setOnClickListener{
-            findNavController().navigate(R.id.action_nav_repuestos_conejo_to_addRepuestosconejoFragment)
+            findNavController().navigate(R.id.action_nav_vehiculos_to_addVehiculosFragment)
         }
 
         return binding.root

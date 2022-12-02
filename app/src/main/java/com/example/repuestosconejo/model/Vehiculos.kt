@@ -15,9 +15,9 @@ data class Vehiculos(
     @ColumnInfo(name="marca")
     val marca: String?,
     @ColumnInfo(name="año")
-    val año: String,
+    val año: String?,
     @ColumnInfo(name="modelo")
-    val modelo: String,
+    val modelo: String?
 
     ) : Parcelable
 

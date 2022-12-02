@@ -7,26 +7,26 @@
     android:background="#5E769C"
     android:orientation="vertical"
     android:padding="10sp"
-    tools:context=".ui.Vehiculos.AddVehiculosFragment">
+    tools:context=".ui.Pedidos.AddPedidosFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btn_guardar_vehiculo"
+            android:id="@+id/btn_guardar_pedido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#000000"
             android:backgroundTint="#000000"
-            android:text="GUARDAR VEHICULO"
+            android:text="GUARDAR PEDIDO"
             android:textSize="24sp"
             app:iconTint="#000000"
             tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="606dp" />
 
         <TextView
-            android:id="@+id/etModelo"
+            android:id="@+id/etSegundoApellido"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -35,18 +35,57 @@
             android:textSize="28sp"
             android:textStyle="bold|italic"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="542dp" />
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="404dp" />
+
+        <TextView
+            android:id="@+id/etPrecioPedido"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:background="#BDC2CA"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <TextView
+            android:id="@+id/etDireccion"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:background="#BDC2CA"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="494dp" />
+
+        <TextView
+            android:id="@+id/etFecha"
+            android:layout_width="120dp"
+            android:layout_height="34dp"
+            android:background="#BDC2CA"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="218dp" />
 
         <TextView
             android:id="@+id/textViewModelo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MODELO"
+            android:text="SEGUNDO APELLIDO"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="477dp" />
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="349dp" />
 
         <ImageView
             android:id="@+id/img_logo_addrep"
@@ -61,7 +100,7 @@
             android:layout_width="336dp"
             android:layout_height="34dp"
             android:background="#5E769E"
-            android:text="AGREGAR VEHICULO"
+            android:text="AGREGAR PEDIDO"
             android:textAlignment="center"
             android:textColor="#FEFEFE"
             android:textSize="24sp"
@@ -73,24 +112,54 @@
             android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MARCA"
+            android:text="NOMBRE"
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="28dp"
             tools:layout_editor_absoluteY="170dp" />
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FECHA"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="266dp"
+            tools:layout_editor_absoluteY="170dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRECIO"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="260dp"
+            tools:layout_editor_absoluteY="276dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="451dp" />
+
+        <TextView
             android:id="@+id/tv_añotxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AÑO"
+            android:text="PRIMER APELLIDO"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="325dp" />
+            tools:layout_editor_absoluteX="-9dp"
+            tools:layout_editor_absoluteY="252dp" />
 
         <TextView
-            android:id="@+id/etAvehiculo"
+            android:id="@+id/etPrimerApellido"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -100,10 +169,10 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="401dp" />
+            tools:layout_editor_absoluteY="296dp" />
 
         <TextView
-            android:id="@+id/etMarca"
+            android:id="@+id/etNombreCliente"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -113,7 +182,7 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="245dp" />
+            tools:layout_editor_absoluteY="202dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

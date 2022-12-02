@@ -1,4 +1,4 @@
-package com.example.vehiculos.ui.Vehiculos
+package com.example.repuestosconejo.ui.Vehiculos
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -37,8 +37,8 @@ class AddVehiculosFragment : Fragment() {
 
     private fun addVehiculo() {
         val marca = binding.etMarca.text.toString()
-        val año = binding.etAORep.text.toString()
-        val modelo = binding.etAORep.text.toString()
+        val año = binding.etAvehiculo.text.toString()
+        val modelo = binding.etModelo.text.toString()
               if (marca.isNotEmpty()) {
 
             val vehiculo = Vehiculos(0, marca, año, modelo)
@@ -47,7 +47,7 @@ class AddVehiculosFragment : Fragment() {
                 requireContext(), getString(R.string.msg_vehiculo_added),
                 Toast.LENGTH_SHORT
             ).show()
-            findNavController().navigate(R.id.action_addRepuestosconejoFragment_to_addVehiculosFragment)
+            findNavController().navigate(R.id.action_addVehiculosFragment_to_nav_vehiculos)
 
         } else {
             Toast.makeText(

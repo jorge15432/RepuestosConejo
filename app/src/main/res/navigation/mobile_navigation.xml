@@ -3,37 +3,70 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_repuestos_conejo">
+    android:label="@string/bt_add_repuesto"
+    app:startDestination="@+id/nav_repuestos">
 
     <fragment
-        android:id="@+id/nav_repuestos_conejo"
+        android:id="@+id/nav_repuestos"
         android:name="com.example.repuestosconejo.ui.Vehiculos.VehiculosFragment"
         android:label="@string/menu_repuestos_conejo"
-        tools:layout="@layout/fragment_vehiculos" />
+        tools:layout="@layout/fragment_vehiculos" >
+        <action
+            android:id="@+id/action_nav_repuestos_to_addRepuestosconejoFragment"
+            app:destination="@id/addRepuestosconejoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_pedidos"
-        android:name="com.example.repuestosconejo.ui.Repuestos.RepuestosFragment"
+        android:name="com.example.repuestosconejo.ui.Pedidos.PedidosFragment"
         android:label="@string/menu_pedidos"
-        tools:layout="@layout/fragment_pedidos" />
+        tools:layout="@layout/fragment_repuestos" >
+        <action
+            android:id="@+id/action_nav_pedidos_to_addPedidos"
+            app:destination="@id/addPedidos" />
+    </fragment>
 
     <fragment
         android:id="@+id/addVehiculosFragment"
         android:name="com.example.repuestosconejo.ui.Vehiculos.AddVehiculosFragment"
-        android:label="@string/bt_add_lugar"
-        tools:layout="@layout/fragment_add_repuestosconejo"/>
+        android:label="@string/bt_add_vehiculo"
+        tools:layout="@layout/fragment_add_vehiculos">
+        <action
+            android:id="@+id/action_addVehiculosFragment_to_addPedidos"
+            app:destination="@id/addPedidos" />
+        <action
+            android:id="@+id/action_addVehiculosFragment_to_nav_vehiculos"
+            app:destination="@id/nav_vehiculos" />
+    </fragment>
+
     <fragment
-        android:id="@+id/nav_repuestos"
+        android:id="@+id/nav_vehiculos"
         android:name="com.example.repuestosconejo.ui.Pedidos.PedidosFragment"
         android:label="@string/menu_repuestos"
-        tools:layout="@layout/fragment_repuestos" />
-   <fragment
-       android:id="@+id/addRepuestosconejoFragment"
-        android:name="com.example.repuestosconejo.ui.Vehiculos.AddVehiculosFragment"
-        android:label="@string/bt_add_lugar"
-        tools:layout="@layout/fragment_add_repuestosconejo" >
+        tools:layout="@layout/fragment_repuestos" >
+        <action
+            android:id="@+id/action_nav_vehiculos_to_addVehiculosFragment"
+            app:destination="@id/addVehiculosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRepuestosconejoFragment"
+        android:name="com.example.repuestosconejo.ui.Repuestos.AddRepuestosFragment"
+        android:label="@string/bt_add_repuesto"
+        tools:layout="@layout/fragment_add_repuestosconejo">
         <action
             android:id="@+id/action_addRepuestosconejoFragment_to_addVehiculosFragment"
             app:destination="@id/addVehiculosFragment" />
+        <action
+            android:id="@+id/action_addRepuestosconejoFragment_to_nav_repuestos"
+            app:destination="@id/nav_repuestos" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPedidos"
+        android:name="com.example.repuestosconejo.ui.Pedidos.AddPedidosFragment"
+        android:label="@string/bt_add_pedido"
+        tools:layout="@layout/fragment_add_pedidos">
+        <action
+            android:id="@+id/action_addPedidos_to_nav_pedidos"
+            app:destination="@id/nav_pedidos" />
     </fragment>
 </navigation>

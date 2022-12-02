@@ -25,7 +25,9 @@ class PedidosFragment : Fragment() {
         _binding = FragmentPedidosBinding.inflate(inflater, container, false)
 
 
-
+        binding.addpedidos.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_pedidos_to_addPedidos)
+        }
 
         return binding.root
     }

@@ -15,9 +15,11 @@ data class Repuestos(
     @ColumnInfo(name="nombre")
     val nombre: String?,
     @ColumnInfo(name="descripcion")
-    val descripcion: String,
+    val descripcion: String?,
     @ColumnInfo(name="cantidad")
-    val cantidad: String,
+    val cantidad: String?,
+    @ColumnInfo(name="precio")
+    val precio: String?
 
     ) : Parcelable
 

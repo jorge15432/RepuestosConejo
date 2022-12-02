@@ -16,6 +16,7 @@
     <string name="menu_repuestos_conejo">Home</string>
     <string name="menu_pedidos">Pedidos</string>
     <string name="menu_repuestos">Repuestos</string>
+    <string name="menu_vehiculos">Vehiculos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -23,7 +24,9 @@
     <string name="msg_correo">Email (correo@xxx.xxx)</string>
     <string name="msg_telefono">Teléfono(9999–9999)</string>
     <string name="msg_web">Sitio Web</string>
-    <string name="bt_add_lugar">Agregar repuesto</string>
+    <string name="bt_add_pedido">Agregar pedido</string>
+    <string name="bt_add_vehiculo">Agregar vehiculo</string>
+    <string name="bt_add_repuesto">Agregar repuesto</string>
     <string name="msg_vehiculo_added">Vehiculo agregado…</string>
     <string name="msg_repuesto_added">Repuesto agregado…</string>
     <string name="msg_data">Faltan Datos</string>
