@@ -24,6 +24,7 @@
     <string name="msg_telefono">Teléfono(9999–9999)</string>
     <string name="msg_web">Sitio Web</string>
     <string name="bt_add_lugar">Agregar repuesto</string>
+    <string name="msg_vehiculo_added">Vehiculo agregado…</string>
     <string name="msg_repuesto_added">Repuesto agregado…</string>
     <string name="msg_data">Faltan Datos</string>
 

@@ -16,12 +16,8 @@ data class Vehiculos(
     val marca: String?,
     @ColumnInfo(name="año")
     val año: String,
-    @ColumnInfo(name="codigo")
-    val codigo: String,
-    @ColumnInfo(name="precio")
-    val precio: String?,
-    @ColumnInfo(name="cantidad")
-    val cantidad: String?
+    @ColumnInfo(name="modelo")
+    val modelo: String,
+
     ) : Parcelable
 
-//falta agregar iamgen

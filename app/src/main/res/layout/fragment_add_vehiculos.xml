@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btn_guardar_repuesto"
+            android:id="@+id/btn_guardar_vehiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#000000"
@@ -26,7 +26,7 @@
             tools:layout_editor_absoluteY="606dp" />
 
         <TextView
-            android:id="@+id/etCodigo"
+            android:id="@+id/etModelo"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
@@ -35,74 +35,18 @@
             android:textSize="28sp"
             android:textStyle="bold|italic"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="261dp" />
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="542dp" />
 
         <TextView
-            android:id="@+id/etPrecio"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="545dp" />
-
-        <TextView
-            android:id="@+id/etCantidad"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="201dp"
-            tools:layout_editor_absoluteY="545dp" />
-
-        <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/textViewModelo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="COLOR"
+            android:text="MODELO"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="218dp" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="IMAGEN"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="316dp" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PLACA"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="503dp" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ESTADO"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="217dp"
-            tools:layout_editor_absoluteY="503dp" />
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="477dp" />
 
         <ImageView
             android:id="@+id/img_logo_addrep"
@@ -122,18 +66,18 @@
             android:textColor="#FEFEFE"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="71dp" />
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="95dp" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MODELO"
+            android:text="MARCA"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="119dp" />
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="170dp" />
 
         <TextView
             android:id="@+id/tv_añotxt"
@@ -142,8 +86,8 @@
             android:text="AÑO"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="217dp"
-            tools:layout_editor_absoluteY="119dp" />
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="325dp" />
 
         <TextView
             android:id="@+id/etAñoRep"
@@ -155,8 +99,8 @@
             android:textSize="28sp"
             android:textStyle="bold|italic"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="201dp"
-            tools:layout_editor_absoluteY="165dp" />
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="401dp" />
 
         <TextView
             android:id="@+id/etMarca"
@@ -169,14 +113,7 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="165dp" />
+            tools:layout_editor_absoluteY="245dp" />
 
-        <ImageView
-            android:id="@+id/imgCarro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="360dp"
-            tools:src="@tools:sample/avatars" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
