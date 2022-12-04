@@ -23,7 +23,8 @@
             android:textSize="24sp"
             app:iconTint="#000000"
             tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="606dp" />
+            tools:layout_editor_absoluteY="606dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etModelo"
@@ -36,7 +37,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="542dp" />
+            tools:layout_editor_absoluteY="542dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textViewModelo"
@@ -46,7 +48,8 @@
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="477dp" />
+            tools:layout_editor_absoluteY="477dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/img_logo_addrep"
@@ -54,7 +57,8 @@
             android:layout_height="60dp"
             app:srcCompat="@drawable/logo_repuestos_conejo"
             tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="-1dp" />
+            tools:layout_editor_absoluteY="-1dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView18"
@@ -67,7 +71,8 @@
             android:textSize="24sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="95dp" />
+            tools:layout_editor_absoluteY="95dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView20"
@@ -77,7 +82,19 @@
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="170dp" />
+            tools:layout_editor_absoluteY="170dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOTOR"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="170dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_añotxt"
@@ -87,7 +104,8 @@
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="325dp" />
+            tools:layout_editor_absoluteY="325dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etAvehiculo"
@@ -100,7 +118,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="401dp" />
+            tools:layout_editor_absoluteY="401dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etMarca"
@@ -113,7 +132,22 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="245dp" />
+            tools:layout_editor_absoluteY="245dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/etMotor"
+            android:layout_width="146dp"
+            android:layout_height="30dp"
+            android:background="#BDC2CA"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="218dp"
+            tools:layout_editor_absoluteY="249dp"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

@@ -23,7 +23,8 @@
             android:textSize="24sp"
             app:iconTint="#000000"
             tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="606dp" />
+            tools:layout_editor_absoluteY="606dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etSegundoApellido"
@@ -36,7 +37,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="404dp" />
+            tools:layout_editor_absoluteY="404dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etPrecioPedido"
@@ -48,8 +50,9 @@
             android:textSize="28sp"
             android:textStyle="bold|italic"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="244dp"
-            tools:layout_editor_absoluteY="347dp" />
+            tools:layout_editor_absoluteX="257dp"
+            tools:layout_editor_absoluteY="347dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etDireccion"
@@ -62,7 +65,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="494dp" />
+            tools:layout_editor_absoluteY="494dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etFecha"
@@ -75,7 +79,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="244dp"
-            tools:layout_editor_absoluteY="218dp" />
+            tools:layout_editor_absoluteY="218dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textViewModelo"
@@ -84,8 +89,9 @@
             android:text="SEGUNDO APELLIDO"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="-8dp"
-            tools:layout_editor_absoluteY="349dp" />
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="349dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/img_logo_addrep"
@@ -93,7 +99,8 @@
             android:layout_height="60dp"
             app:srcCompat="@drawable/logo_repuestos_conejo"
             tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="-1dp" />
+            tools:layout_editor_absoluteY="-1dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView18"
@@ -106,7 +113,8 @@
             android:textSize="24sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="95dp" />
+            tools:layout_editor_absoluteY="95dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView20"
@@ -116,7 +124,8 @@
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="170dp" />
+            tools:layout_editor_absoluteY="170dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView2"
@@ -126,7 +135,8 @@
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="266dp"
-            tools:layout_editor_absoluteY="170dp" />
+            tools:layout_editor_absoluteY="170dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView3"
@@ -135,8 +145,9 @@
             android:text="PRECIO"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="260dp"
-            tools:layout_editor_absoluteY="276dp" />
+            tools:layout_editor_absoluteX="266dp"
+            tools:layout_editor_absoluteY="274dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView4"
@@ -146,7 +157,8 @@
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="107dp"
-            tools:layout_editor_absoluteY="451dp" />
+            tools:layout_editor_absoluteY="451dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_añotxt"
@@ -155,8 +167,9 @@
             android:text="PRIMER APELLIDO"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="-9dp"
-            tools:layout_editor_absoluteY="252dp" />
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="252dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etPrimerApellido"
@@ -169,7 +182,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="296dp" />
+            tools:layout_editor_absoluteY="296dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/etNombreCliente"
@@ -182,7 +196,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="202dp" />
+            tools:layout_editor_absoluteY="202dp"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

@@ -29,6 +29,7 @@
     <string name="bt_add_repuesto">Agregar repuesto</string>
     <string name="msg_vehiculo_added">Vehiculo agregado…</string>
     <string name="msg_repuesto_added">Repuesto agregado…</string>
+    <string name="msg_pedido_added">Pedido agregado…</string>
     <string name="msg_data">Faltan Datos</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.repuestosconejo.ui.Vehiculos
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -35,13 +36,15 @@ class AddVehiculosFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private fun addVehiculo() {
         val marca = binding.etMarca.text.toString()
         val año = binding.etAvehiculo.text.toString()
         val modelo = binding.etModelo.text.toString()
-              if (marca.isNotEmpty()) {
+        val motor = binding.etModelo.text.length
+        if (marca.isNotEmpty()) {
 
-            val vehiculo = Vehiculos(0, marca, año, modelo)
+            val vehiculo = Vehiculos(0, marca, año, modelo, 0)
             vehiculosViewModel.saveVehiculos(vehiculo)
             Toast.makeText(
                 requireContext(), getString(R.string.msg_vehiculo_added),

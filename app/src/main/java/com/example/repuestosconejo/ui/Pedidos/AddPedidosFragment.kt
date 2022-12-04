@@ -52,7 +52,7 @@ class AddPedidosFragment : Fragment() {
             val pedidos = Pedidos(0, nombre,apellido1,apellido2,fecha,direccion,precio)
             pedidosViewModel.savePedidos(pedidos)
             Toast.makeText(
-                requireContext(), getString(R.string.msg_repuesto_added),
+                requireContext(), getString(R.string.msg_pedido_added),
                 Toast.LENGTH_SHORT
             ).show()
 
