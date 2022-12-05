@@ -13,6 +13,7 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android.buildFeatures.viewBinding true
 
+
 android {
     namespace 'com.example.repuestosconejo'
     compileSdk 33

@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_addVehiculosFragment_to_nav_vehiculos"
             app:destination="@id/nav_vehiculos" />
+        <argument
+            android:name="Vehiculos"
+            app:argType="com.example.repuestosconejo.model.Vehiculos" />
     </fragment>
 
     <fragment
@@ -68,5 +71,8 @@
         <action
             android:id="@+id/action_addPedidos_to_nav_pedidos"
             app:destination="@id/nav_pedidos" />
+        <argument
+            android:name="pedidos"
+            app:argType="com.example.repuestosconejo.model.Pedidos" />
     </fragment>
 </navigation>

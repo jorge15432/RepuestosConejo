@@ -39,12 +39,12 @@ class AddVehiculosFragment : Fragment() {
     @SuppressLint("SuspiciousIndentation")
     private fun addVehiculo() {
         val marca = binding.etMarca.text.toString()
-        val año = binding.etAvehiculo.text.toString()
+        val año = binding.etAO.text.toString()
         val modelo = binding.etModelo.text.toString()
-        val motor = binding.etModelo.text.length
+        val motor = binding.etMotor.text.toString()
         if (marca.isNotEmpty()) {
 
-            val vehiculo = Vehiculos(0, marca, año, modelo, 0)
+            val vehiculo = Vehiculos(0, marca, año, modelo, motor)
             vehiculosViewModel.saveVehiculos(vehiculo)
             Toast.makeText(
                 requireContext(), getString(R.string.msg_vehiculo_added),

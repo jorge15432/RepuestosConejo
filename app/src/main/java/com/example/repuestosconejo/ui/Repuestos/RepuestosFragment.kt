@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.repuestosconejo.R
+import com.example.repuestosconejo.adapter.RepuestosAdapter
 import com.example.repuestosconejo.databinding.FragmentRepuestosBinding
 import com.example.repuestosconejo.viewmodel.RepuestosViewModel
 
@@ -27,6 +29,16 @@ class RepuestosFragment : Fragment() {
         binding.addrepuestos.setOnClickListener{
             findNavController().navigate(R.id.action_nav_repuestos_to_addRepuestosconejoFragment)
         }
+
+        val repuestosAdapter=RepuestosAdapter()
+        val reciclador=binding.recicladorrepuestos
+        reciclador.adapter=repuestosAdapter
+        reciclador.layoutManager= LinearLayoutManager(requireContext())
+
+        repuestosViewModel.getRepuestos.observe(viewLifecycleOwner){
+                repuestos->repuestosAdapter.setRepuestos(repuestos)
+        }
+
 
         return binding.root
     }

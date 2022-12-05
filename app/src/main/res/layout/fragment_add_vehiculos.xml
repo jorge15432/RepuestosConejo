@@ -108,7 +108,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/etAvehiculo"
+            android:id="@+id/etAño"
             android:layout_width="192dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
