@@ -10,13 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.repuestosconejo.R
 import com.example.repuestosconejo.databinding.FragmentAddPedidosBinding
-import com.example.repuestosconejo.databinding.FragmentAddRepuestosconejoBinding
 import com.example.repuestosconejo.model.Pedidos
-import com.example.repuestosconejo.model.Repuestos
-import com.example.repuestosconejo.model.Vehiculos
 import com.example.repuestosconejo.viewmodel.PedidosViewModel
-import com.example.repuestosconejo.viewmodel.RepuestosViewModel
-import com.example.repuestosconejo.viewmodel.VehiculosViewModel
 
 
 class AddPedidosFragment : Fragment() {

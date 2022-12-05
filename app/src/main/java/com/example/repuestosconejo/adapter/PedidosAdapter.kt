@@ -26,7 +26,7 @@ class PedidosAdapter:RecyclerView.Adapter<PedidosAdapter.PedidosViewHolder>() {
             itemBinding.tvPrecio.text = pedidos.precio
             itemBinding.vistaFila.setOnClickListener{
                 val accion=PedidosFragmentDirections
-                    .actionNavPedidosToAddPedidos(pedidos)
+                    .actionNavPedidosToUpdatePedidos(pedidos)
                 itemView.findNavController().navigate(accion)
             }
 
@@ -43,8 +43,8 @@ class PedidosAdapter:RecyclerView.Adapter<PedidosAdapter.PedidosViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: PedidosViewHolder, position: Int) {
-        val repuestosActual = listaPedidos[position]
-        holder.dibuja(repuestosActual)
+        val pedidosActual = listaPedidos[position]
+        holder.dibuja(pedidosActual)
     }
 
     override fun getItemCount(): Int {

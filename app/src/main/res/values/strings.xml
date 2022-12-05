@@ -4,6 +4,26 @@
     <string name="tv_contra">Contraseña</string>
     <string name="tv_registro">Registrarse</string>
     <string name="tv_loguearse">Loguearse</string>
+    <string name="bt_delete_repuestos">Eliminar Repuesto</string>
+    <string name="bt_update_repuestos">Actualizar Repuesto</string>
+
+    <string name="bt_delete_vehiculos">Eliminar Vehiculo</string>
+    <string name="bt_update_vehiculos">Actualizar Vehiculo</string>
+
+    <string name="bt_delete_pedidos">Eliminar Pedido</string>
+    <string name="bt_update_pedidos">Actualizar Pedido</string>
+
+    <string name="msg_vehiculo_updated">Vehiculo Actualizado</string>
+    <string name="msg_repuesto_updated">Repuesto Actualizado</string>
+    <string name="msg_pedido_updated">Pedido Actualizado</string>
+
+    <string name="msg_vehiculo_deleted">Vehiculo eliminado…</string>
+    <string name="msg_repuesto_deleted">Repuesto eliminado…</string>
+    <string name="msg_pedido_deleted">Pedido eliminado…</string>
+    <string name="msg_pregunta_eliminar">Esta seguro de eliminar?</string>
+    <string name="msg_si">Si</string>
+    <string name="msg_no">No</string>
+
 
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

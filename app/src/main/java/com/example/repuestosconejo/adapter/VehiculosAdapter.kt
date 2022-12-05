@@ -19,17 +19,18 @@ class VehiculosAdapter:RecyclerView.Adapter<VehiculosAdapter.VehiculosViewHolder
 
 
         fun dibuja(vehiculos: Vehiculos) {
-            itemBinding.tvMarca.text=vehiculos.marca
-            itemBinding.tvAno.text=vehiculos.año
-            itemBinding.tvModelo.text=vehiculos.modelo
-            itemBinding.tvMotor.text=vehiculos.motor
-            itemBinding.vistaFila.setOnClickListener{
-                val accion= VehiculosFragmentDirections
-                    .actionNavVehiculosToAddVehiculos(vehiculos)
+            itemBinding.tvMarca.text = vehiculos.marca
+            itemBinding.tvAno.text = vehiculos.año
+            itemBinding.tvModelo.text = vehiculos.modelo
+            itemBinding.tvMotor.text = vehiculos.motor
+            itemBinding.vistaFila.setOnClickListener {
+                val accion = VehiculosFragmentDirections
+                    .actionNavVehiculosToUpdateVehiculos(vehiculos)
                 itemView.findNavController().navigate(accion)
 
-        }
+            }
 
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VehiculosViewHolder {
@@ -41,8 +42,8 @@ class VehiculosAdapter:RecyclerView.Adapter<VehiculosAdapter.VehiculosViewHolder
     }
 
     override fun onBindViewHolder(holder: VehiculosViewHolder, position: Int) {
-        val repuestosActual = listaVehiculos[position]
-        holder.dibuja(repuestosActual)
+        val vehiculosActual = listaVehiculos[position]
+        holder.dibuja(vehiculosActual)
     }
 
     override fun getItemCount(): Int {
@@ -54,4 +55,5 @@ class VehiculosAdapter:RecyclerView.Adapter<VehiculosAdapter.VehiculosViewHolder
         listaVehiculos = vehiculos
         notifyDataSetChanged()
     }
+
 }
