@@ -15,9 +15,9 @@ data class Pedidos(
     @ColumnInfo(name="nombre")
     val nombre: String?,
     @ColumnInfo(name="apellido1")
-    val apellido1: String,
+    val apellido1: String?,
     @ColumnInfo(name="apellido2")
-    val apellido2: String,
+    val apellido2: String?,
     @ColumnInfo(name="fecha")
     val fecha: String?,
     @ColumnInfo(name="direccion")

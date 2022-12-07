@@ -1,153 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5E769C"
-    android:orientation="vertical"
-    android:padding="10sp"
-    tools:context=".ui.Repuestos.AddRepuestosFragment">
+    tools:context=".Home">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.RepuestosConejo.AppBarOverlay">
 
-        <Button
-            android:id="@+id/btn_guardar_repuesto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#121111"
-            android:backgroundTint="#F8F3F3"
-            android:text="GUARDAR REPUESTO"
-            android:textSize="24sp"
-            app:iconTint="#000000"
-            tools:layout_editor_absoluteX="65dp"
-            tools:layout_editor_absoluteY="607dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/etPrecio"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="474dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/etCantidad"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="208dp"
-            tools:layout_editor_absoluteY="474dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PRECIO"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="407dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CANTIDAD"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="407dp"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/img_logo_addrep"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            app:srcCompat="@drawable/logo_repuestos_conejo"
-            tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="-1dp"
-            tools:ignore="MissingConstraints" />
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.RepuestosConejo.PopupOverlay" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="336dp"
-            android:layout_height="34dp"
-            android:background="#5E769E"
-            android:text="AGREGAR REPUESTOS"
-            android:textAlignment="center"
-            android:textColor="#FEFEFE"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="118dp"
-            tools:ignore="MissingConstraints" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NOMBRE"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="199dp"
-            tools:ignore="MissingConstraints" />
+    <include layout="@layout/content_home" />
 
-        <TextView
-            android:id="@+id/tv_añotxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DESCRIPCION"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="199dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/etDescripcion"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="208dp"
-            tools:layout_editor_absoluteY="290dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/etNombre"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="290dp"
-            tools:ignore="MissingConstraints" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

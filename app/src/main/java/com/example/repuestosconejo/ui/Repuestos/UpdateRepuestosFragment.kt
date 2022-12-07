@@ -12,13 +12,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.repuestosconejo.R
 import com.example.repuestosconejo.UpdateRepuestosArgs
-import com.example.repuestosconejo.UpdateVehiculosArgs
 import com.example.repuestosconejo.databinding.FragmentUpdateRepuestosBinding
-import com.example.repuestosconejo.databinding.FragmentUpdateVehiculosBinding
 import com.example.repuestosconejo.model.Repuestos
-import com.example.repuestosconejo.model.Vehiculos
 import com.example.repuestosconejo.viewmodel.RepuestosViewModel
-import com.example.repuestosconejo.viewmodel.VehiculosViewModel
 
 class UpdateRepuestosFragment : Fragment() {
 
@@ -34,15 +30,15 @@ class UpdateRepuestosFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        repuestosViewModel = ViewModelProvider(this).get(RepuestosViewModel::class.java)
+        repuestosViewModel = ViewModelProvider(this)[RepuestosViewModel::class.java]
         _binding = FragmentUpdateRepuestosBinding.inflate(inflater, container, false)
 
 
         //Se pasan los valores a los campos de la pantalla
-        binding.etNombre.setText(args.repuestos.nombre)
-        binding.etCantidad.setText(args.repuestos.cantidad)
-        binding.etDescripcion.setText(args.repuestos.descripcion)
-        binding.etPrecio.setText(args.repuestos.precio)
+        binding.etNombre.text = args.repuestos.nombre.toString()
+        binding.etCantidad.text = args.repuestos.cantidad.toString()
+        binding.etDescripcion.text = args.repuestos.descripcion.toString()
+        binding.etPrecio.text = args.repuestos.precio.toString()
 
 
 

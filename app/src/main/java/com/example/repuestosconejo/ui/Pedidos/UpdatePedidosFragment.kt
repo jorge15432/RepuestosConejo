@@ -1,3 +1,5 @@
+@file:Suppress("UsePropertyAccessSyntax")
+
 package com.example.repuestosconejo.ui.Pedidos
 
 import android.app.AlertDialog
@@ -45,7 +47,7 @@ class UpdatePedidosFragment : Fragment() {
         //Se pasan los valores a los campos de la pantalla
         binding.etNombreCliente.setText(args.pedidos.nombre)
         binding.etPrimerApellido.setText(args.pedidos.apellido1)
-        binding.etSegundoApellido.setText(args.pedidos.apellido2)
+        binding.etSegundoApellido.setText( args.pedidos.apellido2)
         binding.etDireccion.setText(args.pedidos.direccion)
         binding.etFecha.setText(args.pedidos.fecha)
         binding.etPrecioPedido.setText(args.pedidos.precio)

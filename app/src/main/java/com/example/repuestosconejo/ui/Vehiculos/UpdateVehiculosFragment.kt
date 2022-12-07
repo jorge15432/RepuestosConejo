@@ -35,10 +35,10 @@ class UpdateVehiculosFragment : Fragment() {
 
 
         //Se pasan los valores a los campos de la pantalla
-        binding.etMarca.setText(args.vehiculos.marca)
-        binding.etModelo.setText(args.vehiculos.modelo)
-        binding.etAO.setText(args.vehiculos.año)
-        binding.etMotor.setText(args.vehiculos.motor)
+        binding.etMarca.text = args.vehiculos.marca.toString()
+        binding.etModelo.text = args.vehiculos.modelo.toString()
+        binding.etAO.text = args.vehiculos.año.toString()
+        binding.etMotor.text = args.vehiculos.motor.toString()
 
 
 
