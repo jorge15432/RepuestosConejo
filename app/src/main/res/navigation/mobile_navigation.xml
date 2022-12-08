@@ -80,7 +80,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateRepuestos"
-        android:name="com.example.repuestosconejo.UpdateRepuestos"
+        android:name="com.example.repuestosconejo.ui.Repuestos.UpdateRepuestosFragment"
         android:label="fragment_update_repuestos"
         tools:layout="@layout/fragment_update_repuestos">
         <action
@@ -92,7 +92,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateVehiculos"
-        android:name="com.example.repuestosconejo.UpdateVehiculos"
+        android:name="com.example.repuestosconejo.ui.Vehiculos.UpdateVehiculosFragment"
         android:label="fragment_update_vehiculos"
         tools:layout="@layout/fragment_update_vehiculos" >
         <action
@@ -104,7 +104,7 @@
     </fragment>
     <fragment
         android:id="@+id/updatePedidos"
-        android:name="com.example.repuestosconejo.UpdatePedidos"
+        android:name="com.example.repuestosconejo.ui.Pedidos.UpdatePedidosFragment"
         android:label="fragment_update_pedidos"
         tools:layout="@layout/fragment_update_pedidos" >
         <action
@@ -114,4 +114,7 @@
             android:name="pedidos"
             app:argType="com.example.repuestosconejo.model.Pedidos" />
     </fragment>
+    <action
+        android:id="@+id/action_updatePedidos_to_nav_pedidos"
+        app:destination="@id/nav_pedidos" />
 </navigation>
