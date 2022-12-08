@@ -28,7 +28,6 @@ import com.example.repuestosconejo.viewmodel.VehiculosViewModel
 
 class UpdatePedidosFragment : Fragment() {
 
-    //Se recupera un argumento pasadp...
     private val args by navArgs<UpdatePedidosArgs>()
 
     private var _binding: FragmentUpdatePedidosBinding? = null
@@ -44,7 +43,6 @@ class UpdatePedidosFragment : Fragment() {
         _binding = FragmentUpdatePedidosBinding.inflate(inflater, container, false)
 
 
-        //Se pasan los valores a los campos de la pantalla
         binding.etNombreCliente.setText(args.pedidos.nombre)
         binding.etPrimerApellido.setText(args.pedidos.apellido1)
         binding.etSegundoApellido.setText( args.pedidos.apellido2)
@@ -69,18 +67,17 @@ class UpdatePedidosFragment : Fragment() {
     private fun deletePedidos() {
         val alerta= AlertDialog.Builder(requireContext())
         alerta.setTitle(R.string.bt_delete_pedidos)
-        alerta.setMessage(getString(R.string.msg_pregunta_eliminar)+"${args.pedidos.nombre}?")
-        alerta.setPositiveButton(getString(R.string.msg_si)){_,_ ->
+        alerta.setMessage(getString(R.string.msg_preguta_eliminar_pedidos)+"${args.pedidos.nombre}?")
+        alerta.setPositiveButton(getString(R.string.msg_sip)){_,_ ->
             pedidosViewModel.deletePedidos(args.pedidos)
-            Toast.makeText(requireContext(),getString(R.string.msg_pedido_deleted), Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),getString(R.string.msg_pedidos_delete), Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_updatePedidos_to_nav_pedidos)
 
         }
-        alerta.setNegativeButton(getString(R.string.msg_no)) {_,_ ->}
+        alerta.setNegativeButton(getString(R.string.msg_nop)) {_,_ ->}
         alerta.create().show()
     }
 
-    //Efectivamente hace el registro del lugar en la base de datos
     private fun updatePedidos() {
         val nombre=binding.etNombreCliente.text.toString()
         val primerapellido=binding.etPrimerApellido.text.toString()
@@ -92,7 +89,7 @@ class UpdatePedidosFragment : Fragment() {
             val pedidos= Pedidos(args.pedidos.id,nombre, primerapellido,segundoapellido,fecha,direccion,precio)
 
             pedidosViewModel.savePedidos(pedidos)
-            Toast.makeText(requireContext(),getString(R.string.msg_pedido_updated),
+            Toast.makeText(requireContext(),getString(R.string.msg_pedido_update),
                 Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updatePedidos_to_nav_pedidos)
         }else{//No hay info del lugar...

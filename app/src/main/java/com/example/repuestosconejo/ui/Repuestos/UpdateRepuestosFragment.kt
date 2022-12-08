@@ -18,7 +18,6 @@ import com.example.repuestosconejo.viewmodel.RepuestosViewModel
 
 class UpdateRepuestosFragment : Fragment() {
 
-    //Se recupera un argumento pasadp...
     private val args by navArgs<UpdateRepuestosArgs>()
 
     private var _binding: FragmentUpdateRepuestosBinding? = null
@@ -57,18 +56,17 @@ class UpdateRepuestosFragment : Fragment() {
     private fun deleteRepuesto() {
         val alerta= AlertDialog.Builder(requireContext())
         alerta.setTitle(R.string.bt_delete_repuestos)
-        alerta.setMessage(getString(R.string.msg_pregunta_eliminar)+"${args.repuestos.nombre}?")
-        alerta.setPositiveButton(getString(R.string.msg_si)){_,_ ->
+        alerta.setMessage(getString(R.string.msg_preguta_eliminar)+"${args.repuestos.nombre}?")
+        alerta.setPositiveButton(getString(R.string.msg_sir)){_,_ ->
             repuestosViewModel.deleteRepuestos(args.repuestos)
-            Toast.makeText(requireContext(),getString(R.string.msg_vehiculo_deleted), Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),getString(R.string.bt_delete_repuestos), Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_updateRepuestos_to_nav_repuestos)
 
         }
-        alerta.setNegativeButton(getString(R.string.msg_no)) {_,_ ->}
+        alerta.setNegativeButton(getString(R.string.msg_nor)) {_,_ ->}
         alerta.create().show()
     }
 
-    //Efectivamente hace el registro del lugar en la base de datos
     private fun updateRepuestos() {
         val nombre=binding.etNombre.text.toString()
         val cantidad=binding.etCantidad.text.toString()
@@ -78,7 +76,7 @@ class UpdateRepuestosFragment : Fragment() {
             val repuestos= Repuestos(args.repuestos.id,nombre,descripcion,cantidad,precio)
 
             repuestosViewModel.saveRepuestos(repuestos)
-            Toast.makeText(requireContext(),getString(R.string.msg_repuesto_updated),
+            Toast.makeText(requireContext(),getString(R.string.msg_repuesto_update),
                 Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updateRepuestos_to_nav_repuestos)
         }else{//No hay info del lugar...

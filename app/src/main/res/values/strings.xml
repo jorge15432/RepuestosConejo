@@ -4,25 +4,6 @@
     <string name="tv_contra">Contraseña</string>
     <string name="tv_registro">Registrarse</string>
     <string name="tv_loguearse">Loguearse</string>
-    <string name="bt_delete_repuestos">Eliminar Repuesto</string>
-    <string name="bt_update_repuestos">Actualizar Repuesto</string>
-
-    <string name="bt_delete_vehiculos">Eliminar Vehiculo</string>
-    <string name="bt_update_vehiculos">Actualizar Vehiculo</string>
-
-    <string name="bt_delete_pedidos">Eliminar Pedido</string>
-    <string name="bt_update_pedidos">Actualizar Pedido</string>
-
-    <string name="msg_vehiculo_updated">Vehiculo Actualizado</string>
-    <string name="msg_repuesto_updated">Repuesto Actualizado</string>
-    <string name="msg_pedido_updated">Pedido Actualizado</string>
-
-    <string name="msg_vehiculo_deleted">Vehiculo eliminado…</string>
-    <string name="msg_repuesto_deleted">Repuesto eliminado…</string>
-    <string name="msg_pedido_deleted">Pedido eliminado…</string>
-    <string name="msg_pregunta_eliminar">Esta seguro de eliminar?</string>
-    <string name="msg_si">Si</string>
-    <string name="msg_no">No</string>
 
 
     <string name="title_activity_home">Home</string>
@@ -50,6 +31,31 @@
     <string name="msg_vehiculo_added">Vehiculo agregado…</string>
     <string name="msg_repuesto_added">Repuesto agregado…</string>
     <string name="msg_pedido_added">Pedido agregado…</string>
+    <string name="bt_update_pedido">Actualizar pedido…</string>
+    <string name="bt_update_vehiculo">Actualizar vehiculo…</string>
+    <string name="bt_update_repuesto">Actualizar repuesto…</string>
+    <string name="msg_pedido_update">Pedido actualizado…</string>
+    <string name="msg_vehiculo_update">Vehiculo actualizado…</string>
+    <string name="msg_repuesto_update">Repuesto actualizado…</string>
     <string name="msg_data">Faltan Datos</string>
+
+    <string name="bt_delete_repuestos">Eliminar repuesto…</string>
+    <string name="msg_repuestos_delete">Repuesto eliminado…</string>
+    <string name="msg_preguta_eliminar">¿Esta seguro de eliminar el repuesto?</string>
+    <string name="msg_sir">Si repuesto</string>
+    <string name="msg_nor">No repuesto</string>
+
+    <string name="bt_delete_pedidos">Eliminar pedido…</string>
+    <string name="msg_pedidos_delete">Pedido eliminado…</string>
+    <string name="msg_preguta_eliminar_pedidos">¿Esta seguro de eliminar el pedido?</string>
+    <string name="msg_sip">Si pedido</string>
+    <string name="msg_nop">No pedido</string>
+
+    <string name="bt_delete_vehiculos">Eliminar vehiculo…</string>
+    <string name="msg_vehiculos_delete">Vehiculo eliminado…</string>
+    <string name="msg_preguta_eliminar_vehiculos">¿Esta seguro de eliminar el vehiculo?</string>
+    <string name="msg_siv">Si vehiculo</string>
+    <string name="msg_nov">No vehiculo</string>
+
 
 </resources>

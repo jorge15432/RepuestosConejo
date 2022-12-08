@@ -18,7 +18,6 @@ import com.example.repuestosconejo.viewmodel.VehiculosViewModel
 
 class UpdateVehiculosFragment : Fragment() {
 
-    //Se recupera un argumento pasadp...
     private val args by navArgs<UpdateVehiculosArgs>()
 
     private var _binding: FragmentUpdateVehiculosBinding? = null
@@ -34,7 +33,6 @@ class UpdateVehiculosFragment : Fragment() {
         _binding = FragmentUpdateVehiculosBinding.inflate(inflater, container, false)
 
 
-        //Se pasan los valores a los campos de la pantalla
         binding.etMarca.text = args.vehiculos.marca.toString()
         binding.etModelo.text = args.vehiculos.modelo.toString()
         binding.etAO.text = args.vehiculos.año.toString()
@@ -57,18 +55,17 @@ class UpdateVehiculosFragment : Fragment() {
     private fun deleteVehiculo() {
         val alerta= AlertDialog.Builder(requireContext())
         alerta.setTitle(R.string.bt_delete_vehiculos)
-        alerta.setMessage(getString(R.string.msg_pregunta_eliminar)+"${args.vehiculos.marca}?")
-        alerta.setPositiveButton(getString(R.string.msg_si)){_,_ ->
+        alerta.setMessage(getString(R.string.msg_preguta_eliminar_vehiculos)+"${args.vehiculos.marca}?")
+        alerta.setPositiveButton(getString(R.string.msg_siv)){_,_ ->
             vehiculosViewModel.deleteVehiculos(args.vehiculos)
-            Toast.makeText(requireContext(),getString(R.string.msg_vehiculo_deleted), Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),getString(R.string.msg_vehiculos_delete), Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_updateVehiculos_to_nav_vehiculos)
 
         }
-        alerta.setNegativeButton(getString(R.string.msg_no)) {_,_ ->}
+        alerta.setNegativeButton(getString(R.string.msg_nov)) {_,_ ->}
         alerta.create().show()
     }
 
-    //Efectivamente hace el registro del lugar en la base de datos
     private fun updateVehiculo() {
         val marca=binding.etMarca.text.toString()
         val motor=binding.etMotor.text.toString()
@@ -78,7 +75,7 @@ class UpdateVehiculosFragment : Fragment() {
             val vehiculo= Vehiculos(args.vehiculos.id,marca,año,modelo,motor)
 
             vehiculosViewModel.saveVehiculos(vehiculo)
-            Toast.makeText(requireContext(),getString(R.string.msg_vehiculo_updated),
+            Toast.makeText(requireContext(),getString(R.string.msg_vehiculo_update),
                 Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updateVehiculos_to_nav_vehiculos)
         }else{//No hay info del lugar...
