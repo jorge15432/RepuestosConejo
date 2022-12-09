@@ -12,7 +12,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="411dp"
-        android:layout_height="655dp"
+        android:layout_height="466dp"
         android:background="#4C6793">
 
         <TextView
@@ -27,7 +27,8 @@
             android:textStyle="bold|italic"
             android:visibility="visible"
             tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="174dp" />
+            tools:layout_editor_absoluteY="174dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/et_contra"
@@ -40,7 +41,8 @@
             android:textSize="28sp"
             android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="235dp" />
+            tools:layout_editor_absoluteY="235dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_repetir_contra"
@@ -53,14 +55,16 @@
             android:textSize="27sp"
             android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="298dp" />
+            tools:layout_editor_absoluteY="298dp"
+            tools:ignore="MissingConstraints" />
 
         <LinearLayout
             android:layout_width="369dp"
             android:layout_height="0dp"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="434dp">
+            tools:layout_editor_absoluteY="434dp"
+            tools:ignore="MissingConstraints" >
 
         </LinearLayout>
 
@@ -70,7 +74,8 @@
             android:layout_height="60dp"
             app:srcCompat="@drawable/logo_repuestos_conejo"
             tools:layout_editor_absoluteX="71dp"
-            tools:layout_editor_absoluteY="39dp" />
+            tools:layout_editor_absoluteY="39dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/img_correo"
@@ -79,7 +84,8 @@
             android:adjustViewBounds="false"
             app:srcCompat="@drawable/_0442"
             tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="165dp" />
+            tools:layout_editor_absoluteY="165dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/img_contraseña"
@@ -88,7 +94,8 @@
             android:adjustViewBounds="false"
             app:srcCompat="@drawable/png_transparent_computer_icons_skype_icon_design_change_password_logo_internet_share_icon_removebg_preview"
             tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="227dp" />
+            tools:layout_editor_absoluteY="227dp"
+            tools:ignore="MissingConstraints" />/>
 
         <ImageView
             android:id="@+id/img_contraseña3"
@@ -97,7 +104,8 @@
             android:adjustViewBounds="false"
             app:srcCompat="@drawable/png_transparent_computer_icons_skype_icon_design_change_password_logo_internet_share_icon_removebg_preview"
             tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="291dp" />
+            tools:layout_editor_absoluteY="291dp"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/btn_ingresar"
@@ -109,8 +117,10 @@
             android:textSize="24sp"
             app:iconTint="#000000"
             tools:layout_editor_absoluteX="123dp"
-            tools:layout_editor_absoluteY="410dp" />
+            tools:layout_editor_absoluteY="410dp"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>

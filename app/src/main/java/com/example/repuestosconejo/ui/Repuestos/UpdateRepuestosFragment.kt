@@ -11,14 +11,13 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.repuestosconejo.R
-import com.example.repuestosconejo.UpdateRepuestosArgs
 import com.example.repuestosconejo.databinding.FragmentUpdateRepuestosBinding
 import com.example.repuestosconejo.model.Repuestos
 import com.example.repuestosconejo.viewmodel.RepuestosViewModel
 
 class UpdateRepuestosFragment : Fragment() {
 
-    private val args by navArgs<UpdateRepuestosArgs>()
+    private val args by navArgs<UpdateRepuestosFragmentArgs>()
 
     private var _binding: FragmentUpdateRepuestosBinding? = null
     private val binding get() = _binding!!

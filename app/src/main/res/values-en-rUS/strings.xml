@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RepuestosConejo</string>
+    <string name="tv_correo">Email</string>
+    <string name="tv_contra">Password</string>
+    <string name="tv_registro">Check in</string>
+    <string name="tv_loguearse">Login</string>
+    <string name="selectedlanguage">English</string>
+
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_repuestos_conejo">Home</string>
+    <string name="menu_pedidos">Orders</string>
+    <string name="menu_repuestos">Spare parts</string>
+    <string name="menu_vehiculos">Vehicles</string>
+    <string name="menu_idioma">Change language</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="msg_nombre">Spare part name</string>
+    <string name="msg_correo">Email (correo@xxx.xxx)</string>
+    <string name="msg_telefono">Phone(9999–9999)</string>
+    <string name="msg_web">Sitio Web</string>
+    <string name="bt_add_pedido">Add order</string>
+    <string name="bt_add_vehiculo">Add vehicle</string>
+    <string name="bt_add_repuesto">Add spare</string>
+    <string name="msg_vehiculo_added">vehicle added…</string>
+    <string name="msg_repuesto_added">Spare added…</string>
+    <string name="msg_pedido_added">Order added…</string>
+    <string name="bt_update_pedido">Update order…</string>
+    <string name="bt_update_vehiculo">Update vehicle…</string>
+    <string name="bt_update_repuesto">Update spare…</string>
+    <string name="msg_pedido_update">Order updated…</string>
+    <string name="msg_vehiculo_update">Vehicle updated…</string>
+    <string name="msg_repuesto_update">Spare updated…</string>
+    <string name="msg_data">Missing data</string>
+
+    <string name="bt_delete_repuestos">Delete spare…</string>
+    <string name="msg_repuestos_delete">Spare deleted…</string>
+    <string name="msg_preguta_eliminar">¿Are you sure to eliminate the spare?</string>
+    <string name="msg_sir">Yes spare</string>
+    <string name="msg_nor">No spare</string>
+
+    <string name="bt_delete_pedidos">Delete order…</string>
+    <string name="msg_pedidos_delete">Order deleted…</string>
+    <string name="msg_preguta_eliminar_pedidos">¿Are you sure to eliminate the order?</string>
+    <string name="msg_sip">Yes order</string>
+    <string name="msg_nop">No order</string>
+
+    <string name="bt_delete_vehiculos">Delete vehicle…</string>
+    <string name="msg_vehiculos_delete">Vehicle deleted…</string>
+    <string name="msg_preguta_eliminar_vehiculos">¿Are you sure to eliminate the vehicle?</string>
+    <string name="msg_siv">Yes vehicle</string>
+    <string name="msg_nov">No vehicle</string>
+
+
+</resources>
