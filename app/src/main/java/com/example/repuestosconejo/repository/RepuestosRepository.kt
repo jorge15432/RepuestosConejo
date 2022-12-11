@@ -7,16 +7,12 @@ import com.example.repuestosconejo.model.Repuestos
 import com.example.repuestosconejo.model.Vehiculos
 
 class RepuestosRepository(private val repuestosDao: RepuestosDao) {
-    suspend fun saveRepuestos(repuestos: Repuestos) {
-    if (repuestos.id==0){
-        repuestosDao.addRepuestos(repuestos)
 
-    }else {
-        repuestosDao.updateRepuestos(repuestos)
+     fun saveRepuestos(repuestos: Repuestos) {
+        repuestosDao.saveRepuestos(repuestos)
 
     }
-    }
-    suspend fun deleteRepuestos(repuestos: Repuestos) {
+     fun deleteRepuestos(repuestos: Repuestos) {
         repuestosDao.deleteRepuestos(repuestos)
     }
     val getRepuestos : LiveData<List<Repuestos>> = repuestosDao.getRepuestos()

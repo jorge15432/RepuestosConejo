@@ -45,7 +45,7 @@ class AddRepuestosFragment : Fragment() {
         val precio = binding.etPrecio.text.toString()
         if (nombre.isNotEmpty()) {
 
-            val repuesto = Repuestos(0, nombre,descripcion,cantidad,precio)
+            val repuesto = Repuestos("", nombre,descripcion,cantidad,precio)
             repuestosViewModel.saveRepuestos(repuesto)
             Toast.makeText(
                 requireContext(), getString(R.string.msg_repuesto_added),

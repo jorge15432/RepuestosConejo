@@ -44,7 +44,7 @@ class AddPedidosFragment : Fragment() {
         val precio = binding.etPrecioPedido.text.toString()
         if (nombre.isNotEmpty()) {
 
-            val pedidos = Pedidos(0, nombre,apellido1,apellido2,fecha,direccion,precio)
+            val pedidos = Pedidos("", nombre,apellido1,apellido2,fecha,direccion,precio)
             pedidosViewModel.savePedidos(pedidos)
             Toast.makeText(
                 requireContext(), getString(R.string.msg_pedido_added),

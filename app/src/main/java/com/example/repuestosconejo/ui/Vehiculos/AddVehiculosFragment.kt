@@ -44,7 +44,7 @@ class AddVehiculosFragment : Fragment() {
         val motor = binding.etMotor.text.toString()
         if (marca.isNotEmpty()) {
 
-            val vehiculo = Vehiculos(0, marca, año, modelo, motor)
+            val vehiculo = Vehiculos("", marca, año, modelo, motor)
             vehiculosViewModel.saveVehiculos(vehiculo)
             Toast.makeText(
                 requireContext(), getString(R.string.msg_vehiculo_added),

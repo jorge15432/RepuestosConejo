@@ -1,30 +1,107 @@
 package com.example.repuestosconejo.data
 
 
+import android.util.Log
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Update
+import androidx.lifecycle.MutableLiveData
 import com.example.repuestosconejo.model.Pedidos
-import com.example.repuestosconejo.model.Vehiculos
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.FirebaseFirestoreSettings
+import com.google.firebase.ktx.Firebase
 
-@Dao
-interface PedidosDao {
+
+class PedidosDao {
 
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addPedidos(pedidos: Pedidos)
+    private val coleccion1 = "pedidosApp"
+    private val usuario = Firebase.auth.currentUser?.nombre.toString()
+    private val collection2 = "misPedidos"
 
-    @Update(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun updatePedidos(pedidos: Pedidos)
+    private var firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
 
-    @Delete
-    suspend fun deletePedidos(pedidos: Pedidos)
 
-    @Query ("SELECT * FROM pedidos")
-    fun getPedidos() : LiveData<List<Pedidos>>
+    init {
+        firestore.firestoreSettings = FirebaseFirestoreSettings.Builder().build()
+    }
+
+   fun savePedidos(pedidos: Pedidos){
+       val documento: DocumentReference
+       if (pedidos.id.isEmpty()) {
+           documento = firestore
+               .collection(coleccion1)
+               .document(usuario)
+               .collection(collection2)
+               .document()
+           pedidos.id = documento.id
+
+       } else {
+           documento = firestore
+               .collection(coleccion1)
+               .document(usuario)
+               .collection(collection2)
+               .document()
+           pedidos.id = documento.id
+
+       }
+       documento.set(pedidos)
+           .addOnSuccessListener {
+               Log.d("savePedidos", "Pedidos agregado/actualizado")
+           }
+           .addOnCanceledListener {
+               Log.e("savePedidos", "pedidos NO agregado/actualizado")
+           }
+   }
+
+
+
+
+     fun deletePedidos(pedidos: Pedidos){
+         if (pedidos.id.isNotEmpty()) {
+             firestore
+                 .collection(coleccion1)
+                 .document(usuario)
+                 .collection(collection2)
+                 .document(pedidos.id)
+                 .delete()
+                 .addOnSuccessListener {
+                     Log.d("deletePedidos", "pedidos eliminado")
+                 }
+                 .addOnCanceledListener {
+                     Log.e("deletePedidos", "pedidos NO eliminado")
+                 }
+         }
+
+     }
+
+    fun getPedidos() : LiveData<List<Pedidos>>{
+        val listaPedidos = MutableLiveData<List<Pedidos>>()
+        firestore
+            .collection(coleccion1)
+            .document(usuario)
+            .collection(collection2)
+            .addSnapshotListener { instantanea, error ->
+                if (error != null) {
+                    return@addSnapshotListener
+
+                }
+                if (instantanea != null) {
+                    val lista = ArrayList<Pedidos>()
+
+                    instantanea.documents.forEach {
+                        val pedidos = it.toObject(Pedidos::class.java)
+                        if (pedidos != null) {
+                            lista.add(pedidos)
+
+
+                        }
+                    }
+                    listaPedidos.value = lista
+                }
+            }
+
+        return listaPedidos
+    }
 }
 

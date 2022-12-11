@@ -7,16 +7,12 @@ import com.example.repuestosconejo.model.Pedidos
 import com.example.repuestosconejo.model.Vehiculos
 
 class PedidosRepository(private val pedidosDao: PedidosDao) {
-    suspend fun savePedidos(pedidos: Pedidos) {
-    if (pedidos.id==0){
-        pedidosDao.addPedidos(pedidos)
 
-    }else {
-        pedidosDao.updatePedidos(pedidos)
+     fun savePedidos(pedidos: Pedidos) {
+        pedidosDao.savePedidos(pedidos)
 
     }
-    }
-    suspend fun deletePedidos(pedidos: Pedidos) {
+     fun deletePedidos(pedidos: Pedidos) {
         pedidosDao.deletePedidos(pedidos)
     }
     val getPedidos : LiveData<List<Pedidos>> = pedidosDao.getPedidos()
