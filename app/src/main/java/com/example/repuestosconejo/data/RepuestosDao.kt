@@ -15,7 +15,7 @@ class RepuestosDao {
 
 
     private val coleccion1 = "repuestosApp"
-    private val usuario = Firebase.auth.currentUser?.nombre.toString()
+    private val usuario = Firebase.auth.currentUser?.email.toString()
     private val collection2 = "misRepuestos"
 
     private var firestore: FirebaseFirestore = FirebaseFirestore.getInstance()

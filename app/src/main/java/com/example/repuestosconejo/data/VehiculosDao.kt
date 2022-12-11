@@ -15,7 +15,7 @@ import com.google.firebase.ktx.Firebase
 class VehiculosDao {
 
     private val coleccion1 = "vehiculosApp"
-    private val usuario = Firebase.auth.currentUser?.marca.toString()
+    private val usuario = Firebase.auth.currentUser?.email.toString()
     private val collection2 = "misVehiculos"
 
     private var firestore: FirebaseFirestore = FirebaseFirestore.getInstance()

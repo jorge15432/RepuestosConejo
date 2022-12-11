@@ -16,7 +16,7 @@ class PedidosDao {
 
 
     private val coleccion1 = "pedidosApp"
-    private val usuario = Firebase.auth.currentUser?.nombre.toString()
+    private val usuario = Firebase.auth.currentUser?.email.toString()
     private val collection2 = "misPedidos"
 
     private var firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
