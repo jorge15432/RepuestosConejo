@@ -1,10 +1,15 @@
 package com.example.repuestosconejo
 
+import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.repuestosconejo.databinding.ActivityMainBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -16,10 +21,11 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
-
+            lateinit var mBtn: Button
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityMainBinding
@@ -28,6 +34,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+         loadLocate()
+        val actionBar=supportActionBar
+        actionBar!!.title=resources.getString(R.string.app_name)
+        mBtn=findViewById(R.id.mChangeLang)
+        mBtn.setOnClickListener{
+            showChangeLang()
+        }
 
         FirebaseApp.initializeApp(this)
         auth = Firebase.auth
@@ -47,6 +60,48 @@ class MainActivity : AppCompatActivity() {
             binding.btGoogle.setOnClickListener { googleSignIn() }
         }
     }
+
+    private fun showChangeLang() {
+        val listItmes= arrayOf("Español","English")
+
+        val mBuilder=AlertDialog.Builder(this@MainActivity)
+        mBuilder.setTitle("Cambiar idioma")
+        mBuilder.setSingleChoiceItems(listItmes,-1){dialog,which ->
+            if(which==0){
+                setLocate("es")
+                recreate()
+            }else if(which==1){
+                setLocate("en")
+                recreate()
+            }
+            dialog.dismiss()
+
+        }
+        val mDialog=mBuilder.create()
+        mDialog.show()
+    }
+
+    private fun setLocate(Lang: String) {
+        val locale= Locale(Lang)
+        Locale.setDefault(locale)
+        val config= Configuration()
+        config.locale=locale
+        baseContext.resources.updateConfiguration(config,baseContext.resources.displayMetrics)
+
+        val editor=getSharedPreferences("Settings", Context.MODE_PRIVATE).edit()
+        editor.putString("My_Lang",Lang)
+        editor.apply()
+
+    }
+
+    private fun loadLocate(){
+        val sharedPreferences=getSharedPreferences("Settings",Activity.MODE_PRIVATE)
+        val language=sharedPreferences.getString("My_Lang","")
+        if (language != null) {
+            setLocate(language)
+        }
+    }
+
 
     private fun googleSignIn() {
         val signInIntent = googleSignInClient.signInIntent
