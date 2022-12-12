@@ -58,13 +58,11 @@ class Home : AppCompatActivity() {
     tvNombre.text = usuario?.displayName
     tvCorreo.text = usuario?.email
     val fotoUrl = usuario?.photoUrl.toString()
-        if(fotoUrl.isNotEmpty()){
+        if(fotoUrl.isNotEmpty()) {
             Glide.with(this)
                 .load(fotoUrl)
                 .circleCrop()
-                .into(imagen){
-
-                }
+                .into(imagen)
 
         }
 

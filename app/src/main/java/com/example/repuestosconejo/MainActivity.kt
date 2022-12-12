@@ -75,19 +75,20 @@ class MainActivity : AppCompatActivity() {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful)
-                val user = auth.currentUser
-                refresca(user)
-            } else {
-            refresca(null)
+                if (task.isSuccessful) {
+                    val user = auth.currentUser
+                    refresca(user)
+                } else {
+                    refresca(null)
 
-        }
+                }
+            }
 
     }
 
     private fun Login() {
 
-        val email = binding.etCorreo.text.toString()
+        val email = binding.correoUsuario.text.toString()
         val contra = binding.etContra.text.toString()
 
         Log.d("Autenticandose", "Haciendo llamado de autenticacion")
@@ -110,7 +111,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun Registro() {
-        val email = binding.etCorreo.text.toString()
+        val email = binding.correoUsuario.text.toString()
         val contra = binding.etContra.text.toString()
 
         auth.createUserWithEmailAndPassword(email, contra).addOnCompleteListener(this) { task ->

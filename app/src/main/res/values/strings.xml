@@ -61,6 +61,6 @@
     <string name="msg_siv">Si vehiculo</string>
     <string name="msg_nov">No vehiculo</string>
 
-
+    <string name="default_web_client_id_r" translatable="false">139722716035-3s93q7u2e50bl9l5pbtvpcc3bghg5ih3.apps.googleusercontent.com</string>
 
 </resources>

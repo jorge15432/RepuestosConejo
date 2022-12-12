@@ -117,8 +117,4 @@
     <action
         android:id="@+id/action_updatePedidos_to_nav_pedidos"
         app:destination="@id/nav_pedidos" />
-    <fragment
-        android:id="@+id/nav_cambio"
-        android:label="cambio"
-        tools:layout="@layout/cambio" />
 </navigation>
