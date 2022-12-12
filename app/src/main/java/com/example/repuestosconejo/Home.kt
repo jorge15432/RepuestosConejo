@@ -14,6 +14,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.example.repuestosconejo.databinding.ActivityHomeBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -52,10 +53,17 @@ class Home : AppCompatActivity() {
     val vista: View = navView.getHeaderView(0)
     val tvNombre: TextView = vista.findViewById(R.id.nombre_usuario)
     val tvCorreo: TextView = vista.findViewById(R.id.correo_usuario)
+        val imagen: ImageView =vista.findViewById(R.id.imagen_usuario)
     val usuario = Firebase.auth.currentUser
     tvNombre.text = usuario?.displayName
     tvCorreo.text = usuario?.email
-
+        val fotoUrl=usuario?.photoUrl.toString()
+        if(fotoUrl.isNotEmpty()){
+            Glide.with(this)
+                .load(fotoUrl)
+                .circleCrop()
+                .into(imagen)
+        }
 
 
 
