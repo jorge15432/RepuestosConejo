@@ -12,11 +12,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="411dp"
-        android:layout_height="655dp"
+        android:layout_height="658dp"
         android:background="#4C6793">
 
         <TextView
-            android:id="@+id/et_correo"
+            android:id="@+id/correo_usuario"
             android:layout_width="271dp"
             android:layout_height="39dp"
             android:layout_marginTop="8dp"
@@ -50,7 +50,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_registrarse"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_correo" />
+            app:layout_constraintTop_toBottomOf="@+id/correo_usuario" />
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -76,7 +76,7 @@
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_correo">
+            app:layout_constraintTop_toBottomOf="@+id/correo_usuario">
 
         </LinearLayout>
 
@@ -121,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Si no posees una cuenta puedes "
+            android:text="Si no posees una cuenta no puedes "
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_registrarse"
             app:layout_constraintEnd_toStartOf="@+id/tv_registrarse"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -154,6 +154,14 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_registrarse" />
+
+        <ImageView
+            android:id="@+id/btGoogle"
+            android:layout_width="82dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/googleg_standard_color_18"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="485dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,5 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">RepuestosConejo</string>
+    <string name="app_name">RepuestosConejo</string>
+
+
+
     <string name="tv_correo">Correo</string>
     <string name="tv_contra">Contraseña</string>
     <string name="tv_registro">Registrarse</string>
@@ -60,7 +64,6 @@
     <string name="msg_preguta_eliminar_vehiculos">¿Esta seguro de eliminar el vehiculo?</string>
     <string name="msg_siv">Si vehiculo</string>
     <string name="msg_nov">No vehiculo</string>
-
 
 
 </resources>
