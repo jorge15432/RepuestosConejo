@@ -168,16 +168,19 @@ class MainActivity : AppCompatActivity() {
     private fun Registro() {
         val email = binding.correoUsuario.text.toString()
         val contra = binding.etContra.text.toString()
-
+        Log.d("Registrandose","Haciendo llamado a creacion")
         auth.createUserWithEmailAndPassword(email, contra).addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
+                Log.d("Registrandose","se registro")
                 val user = auth.currentUser
                 refresca(user)
             } else {
+                Log.e("Registrandose","Error de registro")
                 Toast.makeText(baseContext, "Error", Toast.LENGTH_LONG).show()
                 refresca(null)
             }
         }
+        Log.d("Registrandose","Sale del proceso...")
     }
 
     private fun refresca(user: FirebaseUser?) {
@@ -186,6 +189,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+    public override fun onStart(){
+        super.onStart()
+        val usuario=auth.currentUser
+        refresca(usuario)
     }
 
 }

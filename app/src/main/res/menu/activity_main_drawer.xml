@@ -20,5 +20,9 @@
             android:id="@+id/nav_cambio"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_idioma" />
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_mapa" />
     </group>
 </menu>

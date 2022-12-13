@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">RepuestosConejo</string>
 
-
+    <string name="menu_mapa">Mapa</string>
 
     <string name="tv_correo">Correo</string>
     <string name="tv_contra">Contraseña</string>
