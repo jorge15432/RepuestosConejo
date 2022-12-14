@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RepuestosConejo</string>
+
+    <string name="menu_mapa">Mapa</string>
+
+    <string name="tv_correo">Correspondência</string>
+    <string name="tv_contra">
+Senha</string>
+    <string name="tv_registro">Check-in</string>
+    <string name="tv_loguearse">
+Conecte-se</string>
+    <string name="selectedlanguage">
+Português</string>
+    <string name="change_language">Mudar idioma</string>
+    <string name="msg_no_puedes">Se você não tem uma conta</string>
+    <string name="registrate">Cadastre-se</string>
+    <string name="ingresar">Entrar</string>
+    <string name="bt_save_pedido">Salvar pedido</string>
+    <string name="pedido_nombre">Nome</string>
+    <string name="pedido_primerapellido">Primeiro apelido</string>
+    <string name="pedido_segundoapellido">
+Segundo sobrenome</string>
+    <string name="pedido_direccion">Endereço</string>
+    <string name="pedido_precio">Preço</string>
+    <string name="pedido_fecha">
+Encontro</string>
+
+
+    <string name="vehiculo_marca">Marca</string>
+    <string name="vehiculo_motor">Motor</string>
+    <string name="vehiculo_ano">Ano</string>
+    <string name="vehiculo_modelo">Modelo</string>
+    <string name="bt_guardar_vehiculo">
+Salvar veículo</string>
+
+
+    <string name="repuesto_nombre">Nome</string>
+    <string name="repuesto_descripcion">
+Descrição</string>
+    <string name="repuesto_precio">Preço</string>
+    <string name="repuesto_cantidad">Quantidade</string>
+    <string name="save_repuesto">
+salvar sobressalente</string>
+
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_repuestos_conejo">Home</string>
+    <string name="menu_pedidos">
+ordens</string>
+    <string name="menu_repuestos">
+peças de reposição</string>
+    <string name="menu_vehiculos">
+Veículos</string>
+    <string name="menu_idioma">
+Mudar idioma</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="msg_nombre">Nombre del Repuesto</string>
+    <string name="msg_correo">Email (correo@xxx.xxx)</string>
+    <string name="msg_telefono">Teléfono(9999–9999)</string>
+    <string name="msg_web">Sitio Web</string>
+    <string name="bt_add_pedido">adicionar pedido</string>
+    <string name="bt_add_vehiculo">
+adicionar veículo</string>
+    <string name="bt_add_repuesto">
+adicionar sobressalente</string>
+    <string name="msg_vehiculo_added">
+veículo adicionado…</string>
+    <string name="msg_repuesto_added">
+Sobressalente adicionado…</string>
+    <string name="msg_pedido_added">pedido adicionado…</string>
+    <string name="bt_update_pedido">
+ordem de atualização…</string>
+    <string name="bt_update_vehiculo">
+atualizar veículo…</string>
+    <string name="bt_update_repuesto">
+atualizar sobressalente…</string>
+    <string name="msg_pedido_update">Pedido atualizado…</string>
+    <string name="msg_vehiculo_update">
+veículo atualizado…</string>
+    <string name="msg_repuesto_update">sobressalente atualizado
+…</string>
+    <string name="msg_data">
+dados ausentes</string>
+
+    <string name="bt_delete_repuestos">
+excluir sobressalente…</string>
+    <string name="msg_repuestos_delete">
+Sobressalente removido…</string>
+    <string name="msg_preguta_eliminar">
+Tem certeza de que deseja excluir a peça sobressalente?</string>
+    <string name="msg_sir">
+se sobrar</string>
+    <string name="msg_nor">
+não sobra</string>
+
+    <string name="bt_delete_pedidos">
+excluir pedido…</string>
+    <string name="msg_pedidos_delete">
+Pedido removido…</string>
+    <string name="msg_preguta_eliminar_pedidos">
+Tem certeza que deseja excluir o pedido?</string>
+    <string name="msg_sip">
+se solicitado</string>
+    <string name="msg_nop">Não solicitado</string>
+
+    <string name="bt_delete_vehiculos">
+excluir veículo…</string>
+    <string name="msg_vehiculos_delete">
+veículo removido…</string>
+    <string name="msg_preguta_eliminar_vehiculos">Tem certeza que deseja deletar o veículo?</string>
+    <string name="msg_siv">sim veículo</string>
+    <string name="msg_nov">Nenhum veículo</string>
+
+
+</resources>

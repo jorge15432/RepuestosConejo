@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:backgroundTint="#000000"
-            android:text="ACTUALIZAR VEHICULO"
+            android:text="@string/bt_update_vehiculo"
             android:textSize="24sp"
             app:iconTint="#000000"
             tools:ignore="MissingConstraints"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:backgroundTint="#000000"
-            android:text="ELIMINAR VEHICULO"
+            android:text="@string/bt_delete_vehiculos"
             android:textSize="24sp"
             app:iconTint="#000000"
             tools:ignore="MissingConstraints"
@@ -41,8 +41,8 @@
 
         <TextView
             android:id="@+id/etModelo"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
+            android:layout_width="168dp"
+            android:layout_height="35dp"
             android:background="#BDC2CA"
             android:fontFamily="sans-serif-black"
             android:textAlignment="center"
@@ -51,18 +51,18 @@
             android:visibility="visible"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="413dp" />
+            tools:layout_editor_absoluteY="354dp" />
 
         <TextView
             android:id="@+id/textViewModelo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MODELO"
+            android:text="@string/vehiculo_modelo"
             android:textColor="#000000"
             android:textSize="24sp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="355dp" />
+            tools:layout_editor_absoluteY="297dp" />
 
         <ImageView
             android:id="@+id/img_logo_addrep"
@@ -78,7 +78,7 @@
             android:layout_width="336dp"
             android:layout_height="34dp"
             android:background="#5E769E"
-            android:text="ACTUALIZAR VEHICULO"
+            android:text="@string/bt_update_vehiculo"
             android:textAlignment="center"
             android:textColor="#FEFEFE"
             android:textSize="24sp"
@@ -91,7 +91,7 @@
             android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MARCA"
+            android:text="@string/vehiculo_marca"
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="28dp"
@@ -102,7 +102,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MOTOR"
+            android:text="@string/vehiculo_motor"
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="250dp"
@@ -113,7 +113,7 @@
             android:id="@+id/tv_añotxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AÑO"
+            android:text="@string/vehiculo_ano"
             android:textColor="#000000"
             android:textSize="24sp"
             tools:ignore="MissingConstraints"

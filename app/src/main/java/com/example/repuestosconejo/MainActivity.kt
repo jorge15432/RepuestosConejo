@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showChangeLang() {
-        val listItmes= arrayOf("Español","English")
+        val listItmes= arrayOf("Español","English","日本","Português")
 
         val mBuilder=AlertDialog.Builder(this@MainActivity)
         mBuilder.setTitle("Cambiar idioma")
@@ -72,6 +72,12 @@ class MainActivity : AppCompatActivity() {
                 recreate()
             }else if(which==1){
                 setLocate("en")
+                recreate()
+            }else if(which==2){
+                setLocate("ja")
+                recreate()
+            }else if(which==3){
+                setLocate("pt")
                 recreate()
             }
             dialog.dismiss()

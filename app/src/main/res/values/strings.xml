@@ -25,14 +25,34 @@
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCYYzp5vcrUwJ0mTbL9NBuNH8JnxWqe4AM</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_no_puedes">Si no posees una cuenta</string>
+    <string name="registrate">Registrate</string>
+    <string name="ingresar">Ingresar</string>
 
     <string name="msg_nombre">Nombre del Repuesto</string>
     <string name="msg_correo">Email (correo@xxx.xxx)</string>
     <string name="msg_telefono">Teléfono(9999–9999)</string>
     <string name="msg_web">Sitio Web</string>
     <string name="bt_add_pedido">Agregar pedido</string>
+    <string name="bt_save_pedido">Guardar pedido</string>
+    <string name="pedido_nombre">Nombre</string>
+    <string name="pedido_primerapellido">Primer Apellido</string>
+    <string name="pedido_segundoapellido">Segundo Apellido</string>
+    <string name="pedido_direccion">Direccion</string>
+    <string name="pedido_precio">Precio</string>
+    <string name="pedido_fecha">Fecha</string>
     <string name="bt_add_vehiculo">Agregar vehiculo</string>
+    <string name="vehiculo_marca">Marca</string>
+    <string name="vehiculo_motor">Motor</string>
+    <string name="vehiculo_ano">Año</string>
+    <string name="vehiculo_modelo">Modelo</string>
+    <string name="bt_guardar_vehiculo">Guardar Vehiculo</string>
     <string name="bt_add_repuesto">Agregar repuesto</string>
+    <string name="repuesto_nombre">Nombre</string>
+    <string name="repuesto_descripcion">Descripcion</string>
+    <string name="repuesto_precio">Precio</string>
+    <string name="repuesto_cantidad">Cantidad</string>
+    <string name="save_repuesto">Guardar repuesto</string>
     <string name="msg_vehiculo_added">Vehiculo agregado…</string>
     <string name="msg_repuesto_added">Repuesto agregado…</string>
     <string name="msg_pedido_added">Pedido agregado…</string>

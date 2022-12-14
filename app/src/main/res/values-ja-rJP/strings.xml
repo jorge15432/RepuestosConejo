@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RepuestosConejo</string>
+
+    <string name="menu_mapa">
+地図</string>
+
+    <string name="tv_correo">
+郵便</string>
+    <string name="tv_contra">
+パスワード</string>
+    <string name="tv_registro">
+チェックイン</string>
+    <string name="tv_loguearse">
+ログインする</string>
+    <string name="selectedlanguage">
+日本</string>
+    <string name="change_language">
+言語を変更</string>
+    <string name="msg_no_puedes">
+アカウントをお持ちでない場合</string>
+    <string name="registrate">サインアップ</string>
+    <string name="ingresar">入る</string>
+    <string name="bt_save_pedido">
+順序を保存</string>
+    <string name="pedido_nombre">
+名前</string>
+    <string name="pedido_primerapellido">
+姓</string>
+    <string name="pedido_segundoapellido">
+姓</string>
+    <string name="pedido_direccion">住所</string>
+    <string name="pedido_precio">
+価格</string>
+    <string name="pedido_fecha">日にち</string>
+
+
+    <string name="vehiculo_marca">ブランド</string>
+    <string name="vehiculo_motor">エンジン</string>
+    <string name="vehiculo_ano">
+年</string>
+    <string name="vehiculo_modelo">モデル</string>
+    <string name="bt_guardar_vehiculo">
+車両を保存</string>
+
+
+    <string name="repuesto_nombre">
+名前</string>
+    <string name="repuesto_descripcion">説明</string>
+    <string name="repuesto_precio">
+価格</string>
+    <string name="repuesto_cantidad">
+量</string>
+    <string name="save_repuesto">
+スペアを保存</string>
+
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">
+設定</string>
+
+    <string name="menu_repuestos_conejo">Home</string>
+    <string name="menu_pedidos">
+注文</string>
+    <string name="menu_repuestos">スペアパーツ</string>
+    <string name="menu_vehiculos">
+乗り物</string>
+    <string name="menu_idioma">言語を変更</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="msg_nombre">Nombre del Repuesto</string>
+    <string name="msg_correo">Email (correo@xxx.xxx)</string>
+    <string name="msg_telefono">Teléfono(9999–9999)</string>
+    <string name="msg_web">Sitio Web</string>
+    <string name="bt_add_pedido">
+注文を追加</string>
+    <string name="bt_add_vehiculo">
+車両を追加</string>
+    <string name="bt_add_repuesto">Agregar repuesto</string>
+    <string name="msg_vehiculo_added">
+追加された車両…</string>
+    <string name="msg_repuesto_added">予備追加…</string>
+    <string name="msg_pedido_added">
+追加注文…</string>
+    <string name="bt_update_pedido">注文を更新…</string>
+    <string name="bt_update_vehiculo">更新車両…</string>
+    <string name="bt_update_repuesto">
+スペアの更新…</string>
+    <string name="msg_pedido_update">
+注文を更新しました…</string>
+    <string name="msg_vehiculo_update">更新された車両…</string>
+    <string name="msg_repuesto_update">
+更新されたスペア…</string>
+    <string name="msg_data">欠損データ</string>
+
+    <string name="bt_delete_repuestos">
+スペアを削除…</string>
+    <string name="msg_repuestos_delete">スペアを取り外しました…</string>
+    <string name="msg_preguta_eliminar">スペアパーツを削除してもよろしいですか?</string>
+    <string name="msg_sir">スペアの場合</string>
+    <string name="msg_nor">
+余裕がない</string>
+
+    <string name="bt_delete_pedidos">
+注文を削除…</string>
+    <string name="msg_pedidos_delete">注文を削除しました…</string>
+    <string name="msg_preguta_eliminar_pedidos">注文を削除してもよろしいですか？</string>
+    <string name="msg_sip">要求された場合</string>
+    <string name="msg_nop">要求されていません</string>
+
+    <string name="bt_delete_vehiculos">車両を削除…</string>
+    <string name="msg_vehiculos_delete">車両が削除されました…</string>
+    <string name="msg_preguta_eliminar_vehiculos">
+車両を削除してもよろしいですか？</string>
+    <string name="msg_siv">はい車両</string>
+    <string name="msg_nov">車両なし</string>
+
+
+</resources>

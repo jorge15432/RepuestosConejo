@@ -8,6 +8,29 @@
     <string name="selectedlanguage">English</string>
     <string name="change_language">Change Language</string>
     <string name="menu_mapa">Map</string>
+    <string name="msg_no_puedes">If you do not have an account</string>
+    <string name="registrate">So… Registrate</string>
+    <string name="ingresar">Login</string>
+    <string name="bt_save_pedido">Save order</string>
+    <string name="pedido_nombre">Name</string>
+    <string name="pedido_primerapellido">First Surname</string>
+    <string name="pedido_segundoapellido">Second Surname</string>
+    <string name="pedido_direccion">Direction</string>
+    <string name="pedido_precio">Price</string>
+    <string name="pedido_fecha">Date</string>
+
+    <string name="repuesto_nombre">Name</string>
+    <string name="repuesto_descripcion">Description</string>
+    <string name="repuesto_precio">Price</string>
+    <string name="repuesto_cantidad">Amount</string>
+    <string name="save_repuesto">Save spare</string>
+
+
+    <string name="vehiculo_marca">Brand</string>
+    <string name="vehiculo_motor">Engine</string>
+    <string name="vehiculo_ano">Year</string>
+    <string name="vehiculo_modelo">Model</string>
+    <string name="bt_guardar_vehiculo">Save Vehicle</string>
 
 
     <string name="title_activity_home">Home</string>
