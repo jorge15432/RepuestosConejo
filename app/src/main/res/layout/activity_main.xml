@@ -46,6 +46,7 @@
             android:textAlignment="center"
             android:textSize="28sp"
             android:textStyle="bold|italic"
+            android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/tv_registrarse"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -131,26 +132,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageButton
-            android:id="@+id/btGoogle"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            app:srcCompat="@drawable/googleg_standard_color_18"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/mChangeLang"
-            android:layout_width="match_parent"
+            android:layout_width="147dp"
             android:layout_height="wrap_content"
             android:text="@string/change_language" />
+
+        <ImageButton
+            android:id="@+id/btGoogle"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/googleg_standard_color_18"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btFacebook"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/facebook"
+            tools:ignore="MissingConstraints" />
     </LinearLayout>
 
 </LinearLayout>

@@ -6,19 +6,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_repuestos"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_repuestos"
             android:title="@string/menu_repuestos" />
         <item
             android:id="@+id/nav_pedidos"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_pedidos"
             android:title="@string/menu_pedidos" />
         <item
             android:id="@+id/nav_vehiculos"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_vehicules"
             android:title="@string/menu_vehiculos" />
         <item
             android:id="@+id/nav_cambio"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_idioma"
             android:title="@string/menu_idioma" />
         <item
             android:id="@+id/nav_mapa"

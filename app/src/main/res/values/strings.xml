@@ -21,7 +21,7 @@
     <string name="menu_repuestos">Repuestos</string>
     <string name="menu_vehiculos">Vehiculos</string>
     <string name="menu_idioma">Cambiar Idioma</string>
-    <string name="menu_mapa">Informacion</string>
+    <string name="menu_mapa">Contactenos</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCYYzp5vcrUwJ0mTbL9NBuNH8JnxWqe4AM</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
