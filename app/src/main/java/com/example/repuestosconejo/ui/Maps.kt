@@ -16,7 +16,9 @@ class Maps : AppCompatActivity(),OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_mapa)
         createFragment()
+
     }
+
 
     private fun createFragment() {
         val mapFragment=supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment

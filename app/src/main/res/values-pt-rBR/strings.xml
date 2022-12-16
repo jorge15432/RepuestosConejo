@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">RepuestosConejo</string>
 
-    <string name="menu_mapa">Mapa</string>
+    <string name="menu_mapa">Contate-nos</string>
 
     <string name="tv_correo">Correspondência</string>
     <string name="tv_contra">
@@ -99,9 +99,9 @@ Sobressalente removido…</string>
     <string name="msg_preguta_eliminar">
 Tem certeza de que deseja excluir a peça sobressalente?</string>
     <string name="msg_sir">
-se sobrar</string>
+se </string>
     <string name="msg_nor">
-não sobra</string>
+não </string>
 
     <string name="bt_delete_pedidos">
 excluir pedido…</string>
@@ -110,16 +110,17 @@ Pedido removido…</string>
     <string name="msg_preguta_eliminar_pedidos">
 Tem certeza que deseja excluir o pedido?</string>
     <string name="msg_sip">
-se solicitado</string>
-    <string name="msg_nop">Não solicitado</string>
+se </string>
+    <string name="msg_nop">Não </string>
 
     <string name="bt_delete_vehiculos">
 excluir veículo…</string>
     <string name="msg_vehiculos_delete">
 veículo removido…</string>
     <string name="msg_preguta_eliminar_vehiculos">Tem certeza que deseja deletar o veículo?</string>
-    <string name="msg_siv">sim veículo</string>
-    <string name="msg_nov">Nenhum veículo</string>
+    <string name="msg_siv">sim </string>
+    <string name="msg_nov">Nenhum </string>
+
 
 
 </resources>

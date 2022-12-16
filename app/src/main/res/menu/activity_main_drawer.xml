@@ -16,10 +16,7 @@
             android:id="@+id/nav_vehiculos"
             android:icon="@drawable/ic_vehicules"
             android:title="@string/menu_vehiculos" />
-        <item
-            android:id="@+id/nav_cambio"
-            android:icon="@drawable/ic_idioma"
-            android:title="@string/menu_idioma" />
+      
         <item
             android:id="@+id/nav_mapa"
             android:icon="@drawable/ic_menu_slideshow"

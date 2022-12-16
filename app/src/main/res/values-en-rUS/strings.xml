@@ -7,7 +7,7 @@
     <string name="tv_loguearse">Login</string>
     <string name="selectedlanguage">English</string>
     <string name="change_language">Change Language</string>
-    <string name="menu_mapa">Map</string>
+    <string name="menu_mapa">Contact Us</string>
     <string name="msg_no_puedes">If you do not have an account</string>
     <string name="registrate">So… Registrate</string>
     <string name="ingresar">Login</string>
@@ -70,20 +70,20 @@
     <string name="bt_delete_repuestos">Delete spare…</string>
     <string name="msg_repuestos_delete">Spare deleted…</string>
     <string name="msg_preguta_eliminar">¿Are you sure to eliminate the spare?</string>
-    <string name="msg_sir">Yes spare</string>
-    <string name="msg_nor">No spare</string>
+    <string name="msg_sir">Yes </string>
+    <string name="msg_nor">No </string>
 
     <string name="bt_delete_pedidos">Delete order…</string>
     <string name="msg_pedidos_delete">Order deleted…</string>
     <string name="msg_preguta_eliminar_pedidos">¿Are you sure to eliminate the order?</string>
-    <string name="msg_sip">Yes order</string>
-    <string name="msg_nop">No order</string>
+    <string name="msg_sip">Yes </string>
+    <string name="msg_nop">No </string>
 
     <string name="bt_delete_vehiculos">Delete vehicle…</string>
     <string name="msg_vehiculos_delete">Vehicle deleted…</string>
     <string name="msg_preguta_eliminar_vehiculos">¿Are you sure to eliminate the vehicle?</string>
-    <string name="msg_siv">Yes vehicle</string>
-    <string name="msg_nov">No vehicle</string>
+    <string name="msg_siv">Yes </string>
+    <string name="msg_nov">No </string>
 
 
 </resources>

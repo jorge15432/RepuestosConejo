@@ -9,208 +9,221 @@
     android:padding="10sp"
     tools:context=".ui.Pedidos.AddPedidosFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/btn_actualizar_pedido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:backgroundTint="#000000"
-            android:text="@string/bt_update_pedido"
-            android:textSize="24sp"
-            app:iconTint="#000000"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="47dp"
-            tools:layout_editor_absoluteY="557dp" />
-
-        <Button
-            android:id="@+id/btn_eliminar_pedido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:backgroundTint="#000000"
-            android:text="@string/bt_delete_pedidos"
-            android:textSize="24sp"
-            app:iconTint="#000000"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="66dp"
-            tools:layout_editor_absoluteY="629dp" />
-
-        <TextView
-            android:id="@+id/etSegundoApellido"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="364dp" />
-
-        <TextView
-            android:id="@+id/etPrecioPedido"
-            android:layout_width="100dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="264dp"
-            tools:layout_editor_absoluteY="315dp" />
-
-        <TextView
-            android:id="@+id/etDireccion"
-            android:layout_width="250dp"
-            android:layout_height="80dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="70dp"
-            tools:layout_editor_absoluteY="445dp" />
-
-        <TextView
-            android:id="@+id/etFecha"
-            android:layout_width="120dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="244dp"
-            tools:layout_editor_absoluteY="170dp" />
-
-        <TextView
-            android:id="@+id/etNombreCliente"
-            android:layout_width="120dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="170dp" />
-
-        <TextView
-            android:id="@+id/textViewModelo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pedido_segundoapellido"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="315dp" />
-
         <ImageView
-            android:id="@+id/img_logo_addrep"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            app:srcCompat="@drawable/logo_repuestos_conejo"
-            tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="-1dp"
+        android:id="@+id/img_logo_addrep"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/logo_repuestos_conejo"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView18"
-            android:layout_width="336dp"
-            android:layout_height="34dp"
-            android:background="#5E769E"
-            android:text="@string/bt_update_pedido"
-            android:textAlignment="center"
-            android:textColor="#FEFEFE"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="75dp" />
+    android:id="@+id/textView18"
+    android:layout_width="336dp"
+    android:layout_height="34dp"
+    android:background="#5E769E"
+    android:text="@string/bt_update_pedido"
+    android:textAlignment="center"
+    android:textColor="#FEFEFE"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pedido_nombre"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="138dp" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pedido_fecha"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:text="@string/pedido_nombre"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pedido_fecha"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="266dp"
-            tools:layout_editor_absoluteY="138dp" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/etFecha"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:background="#BDC2CA"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/etNombreCliente"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="130dp"
+                    android:background="#BDC2CA"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible"
+                    tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pedido_precio"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="266dp"
-            tools:layout_editor_absoluteY="231dp" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pedido_precio"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_añotxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:text="@string/pedido_primerapellido"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etPrecioPedido"
+                    android:layout_width="100dp"
+                    android:layout_height="34dp"
+                    android:background="#BDC2CA"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/etPrimerApellido"
+                    android:layout_width="192dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="#BDC2CA"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible"
+                    tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pedido_direccion"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="126dp"
-            tools:layout_editor_absoluteY="413dp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_añotxt"
-            android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textViewModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pedido_segundoapellido"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/etSegundoApellido"
+                    android:layout_width="192dp"
+                    android:layout_height="34dp"
+                    android:background="#BDC2CA"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible"
+                    tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pedido_primerapellido"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="219dp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/etPrimerApellido"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="263dp" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pedido_direccion"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:ignore="MissingConstraints" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <EditText
+                    android:id="@+id/etDireccion"
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:background="#BDC2CA"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible"
+                    tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_actualizar_pedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:backgroundTint="#000000"
+                    android:text="@string/bt_update_pedido"
+                    android:textSize="24sp"
+                    app:iconTint="#000000"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btn_eliminar_pedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:backgroundTint="#000000"
+                    android:text="@string/bt_delete_pedidos"
+                    android:textSize="24sp"
+                    app:iconTint="#000000"
+                    tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
 </LinearLayout>

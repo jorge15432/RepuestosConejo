@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    android:label="@string/bt_add_repuesto"
+    android:label="@string/menu_vehiculos"
     app:startDestination="@id/nav_repuestos">
 
     <fragment
@@ -81,7 +81,7 @@
     <fragment
         android:id="@+id/updateRepuestos"
         android:name="com.example.repuestosconejo.ui.Repuestos.UpdateRepuestosFragment"
-        android:label="fragment_update_repuestos"
+        android:label="@string/menu_repuestos"
         tools:layout="@layout/fragment_update_repuestos">
         <action
             android:id="@+id/action_updateRepuestos_to_nav_repuestos"
@@ -93,8 +93,8 @@
     <fragment
         android:id="@+id/updateVehiculos"
         android:name="com.example.repuestosconejo.ui.Vehiculos.UpdateVehiculosFragment"
-        android:label="fragment_update_vehiculos"
-        tools:layout="@layout/fragment_update_vehiculos" >
+        android:label="@string/menu_vehiculos"
+        tools:layout="@layout/fragment_update_vehiculos">
         <action
             android:id="@+id/action_updateVehiculos_to_nav_vehiculos"
             app:destination="@id/nav_vehiculos" />
@@ -105,8 +105,8 @@
     <fragment
         android:id="@+id/updatePedidos"
         android:name="com.example.repuestosconejo.ui.Pedidos.UpdatePedidosFragment"
-        android:label="fragment_update_pedidos"
-        tools:layout="@layout/fragment_update_pedidos" >
+        android:label="@string/menu_pedidos"
+        tools:layout="@layout/fragment_update_pedidos">
         <action
             android:id="@+id/action_updatePedidos_to_nav_pedidos"
             app:destination="@id/nav_pedidos" />
@@ -118,7 +118,7 @@
         android:id="@+id/action_updatePedidos_to_nav_pedidos"
         app:destination="@id/nav_pedidos" />
     <fragment
-        android:id="@+id/map"
+        android:id="@+id/nav_map"
         android:label="@string/menu_mapa"
         tools:layout="@layout/fragment_mapa" />
 </navigation>

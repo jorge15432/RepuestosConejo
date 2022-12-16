@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">RepuestosConejo</string>
 
-    <string name="menu_mapa">Mapa</string>
+    <string name="menu_mapa">Contactenos</string>
 
     <string name="tv_correo">Correo</string>
     <string name="tv_contra">Contraseña</string>
@@ -20,6 +20,7 @@
     <string name="pedido_direccion">Direccion</string>
     <string name="pedido_precio">Precio</string>
     <string name="pedido_fecha">Fecha</string>
+
 
 
     <string name="vehiculo_marca">Marca</string>
@@ -73,20 +74,20 @@
     <string name="bt_delete_repuestos">Eliminar repuesto…</string>
     <string name="msg_repuestos_delete">Repuesto eliminado…</string>
     <string name="msg_preguta_eliminar">¿Esta seguro de eliminar el repuesto?</string>
-    <string name="msg_sir">Si repuesto</string>
-    <string name="msg_nor">No repuesto</string>
+    <string name="msg_sir">Si </string>
+    <string name="msg_nor">No </string>
 
     <string name="bt_delete_pedidos">Eliminar pedido…</string>
     <string name="msg_pedidos_delete">Pedido eliminado…</string>
     <string name="msg_preguta_eliminar_pedidos">¿Esta seguro de eliminar el pedido?</string>
-    <string name="msg_sip">Si pedido</string>
-    <string name="msg_nop">No pedido</string>
+    <string name="msg_sip">Si </string>
+    <string name="msg_nop">No </string>
 
     <string name="bt_delete_vehiculos">Eliminar vehiculo…</string>
     <string name="msg_vehiculos_delete">Vehiculo eliminado…</string>
     <string name="msg_preguta_eliminar_vehiculos">¿Esta seguro de eliminar el vehiculo?</string>
-    <string name="msg_siv">Si vehiculo</string>
-    <string name="msg_nov">No vehiculo</string>
+    <string name="msg_siv">Si </string>
+    <string name="msg_nov">No </string>
 
 
 </resources>

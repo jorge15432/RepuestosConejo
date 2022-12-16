@@ -9,94 +9,17 @@
     android:padding="10sp"
     tools:context=".ui.Repuestos.AddRepuestosFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ImageView
+        android:id="@+id/img_logo_addrep"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/logo_repuestos_conejo"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/btn_actualizar_repuesto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#121111"
-            android:backgroundTint="#F8F3F3"
-            android:text="@string/bt_update_repuesto"
-            android:textSize="24sp"
-            app:iconTint="#000000"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="529dp" />
-
-        <Button
-            android:id="@+id/btn_eliminar_repuesto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#121111"
-            android:backgroundTint="#F8F3F3"
-            android:text="@string/bt_delete_repuestos"
-            android:textSize="24sp"
-            app:iconTint="#000000"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="630dp" />
-
-        <TextView
-            android:id="@+id/etPrecio"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="474dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/etCantidad"
-            android:layout_width="192dp"
-            android:layout_height="34dp"
-            android:background="#BDC2CA"
-            android:fontFamily="sans-serif-black"
-            android:textAlignment="center"
-            android:textSize="28sp"
-            android:textStyle="bold|italic"
-            android:visibility="visible"
-            tools:layout_editor_absoluteX="208dp"
-            tools:layout_editor_absoluteY="474dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/repuesto_precio"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="407dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/repuesto_cantidad"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="407dp"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/img_logo_addrep"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            app:srcCompat="@drawable/logo_repuestos_conejo"
-            tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="-1dp"
-            tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView18"
@@ -108,9 +31,14 @@
             android:textColor="#FEFEFE"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="118dp" />
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView20"
@@ -119,38 +47,84 @@
             android:text="@string/repuesto_nombre"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="199dp"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_añotxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
             android:text="@string/repuesto_descripcion"
             android:textColor="#000000"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="221dp"
-            tools:layout_editor_absoluteY="199dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="141dp"
+            android:layout_height="34dp"
+            android:background="#BDC2CA"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
             tools:ignore="MissingConstraints" />
 
-        <TextView
+        <EditText
             android:id="@+id/etDescripcion"
             android:layout_width="192dp"
             android:layout_height="34dp"
+            android:layout_marginLeft="60dp"
             android:background="#BDC2CA"
             android:fontFamily="sans-serif-black"
             android:textAlignment="center"
             android:textSize="28sp"
             android:textStyle="bold|italic"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="208dp"
-            tools:layout_editor_absoluteY="290dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repuesto_precio"
+            android:textColor="#000000"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/etNombre"
-            android:layout_width="192dp"
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="@string/repuesto_cantidad"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etPrecio"
+            android:layout_width="110dp"
             android:layout_height="34dp"
             android:background="#BDC2CA"
             android:fontFamily="sans-serif-black"
@@ -158,9 +132,50 @@
             android:textSize="28sp"
             android:textStyle="bold|italic"
             android:visibility="visible"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="290dp"
             tools:ignore="MissingConstraints" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/etCantidad"
+            android:layout_width="123dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="150dp"
+            android:background="#BDC2CA"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_actualizar_repuesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#121111"
+            android:backgroundTint="#F8F3F3"
+            android:text="@string/bt_update_repuesto"
+            android:textSize="24sp"
+            app:iconTint="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_eliminar_repuesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#121111"
+            android:backgroundTint="#F8F3F3"
+            android:text="@string/bt_delete_repuestos"
+            android:textSize="24sp"
+            app:iconTint="#000000"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
 </LinearLayout>

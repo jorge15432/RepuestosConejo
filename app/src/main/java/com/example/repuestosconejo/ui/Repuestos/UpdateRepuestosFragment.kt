@@ -33,10 +33,11 @@ class UpdateRepuestosFragment : Fragment() {
 
 
         //Se pasan los valores a los campos de la pantalla
-        binding.etNombre.text = args.repuestos.nombre.toString()
-        binding.etCantidad.text = args.repuestos.cantidad.toString()
-        binding.etDescripcion.text = args.repuestos.descripcion.toString()
-        binding.etPrecio.text = args.repuestos.precio.toString()
+
+        binding.etNombre.setText(args.repuestos.nombre)
+        binding.etCantidad.setText(args.repuestos.cantidad)
+        binding.etDescripcion.setText( args.repuestos.descripcion)
+        binding.etPrecio.setText(args.repuestos.precio)
 
 
 
